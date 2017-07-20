@@ -1,0 +1,62 @@
+block variables
+
+doctype html(lang='en')
+head
+  title prismic.io Demo
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  // <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+  // <script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script>
+  // <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-WBL77Z"></script>
+  script(type='text/javascript', async='', src='https://www.gstatic.com/recaptcha/api2/r20170712134223/recaptcha__en.js')
+  script(src='javascript/jquery.min.js')
+  script(src='javascript/jquery.cookie.js')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(charset='utf-8')
+  meta(name='description', content='Foyer travel insurance offers global coverage which takes into account risks linked to private travel, solo or family trips, no matter the destination or the departure period.')
+  meta(name='og:title', content='Travel Insurance Foyer Voyage')
+  meta(name='og:type', content='website')
+  meta(name='og:site_name', content='Foyer voyage')
+  meta(name='og:description', content='Foyer travel insurance offers global coverage which takes into account risks linked to private travel, solo or family trips, no matter the destination or the departure period.')
+  meta(name='og:url', content='http://www.assurance-voyage.lu/en/assurance-foyer-voyage')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  title Foyer voyage | Make sure you have great holiday
+  link(href='http://www.assurance-voyage.lu/en/assurance-foyer-voyage', rel='canonical')
+  meta(name='og:image', content='http://www.foyer.lu/lp/voyage/img/og_image-en.jpg')
+  link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+  link(rel='stylesheet', href='stylesheets/font-awesome.min.css')
+  link(rel='stylesheet', href='stylesheets/foyer_fonts.css')
+  link(type='text/css', rel='stylesheet', href='/javascript/lightSlider/css/lightslider.css')
+  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+  script(src='javascript/bootstrap.min.js')
+  script(src='javascript/jquery.easing.min.js')
+  link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+  link(href='stylesheets/agency.css', rel='stylesheet')
+  // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  script(src='javascript/querySelector.polyfill.js')
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  //script(src='https://www.google.com/recaptcha/api.js?hl=en')
+  //script(src='https://www.googleadservices.com/pagead/conversion/1044300067/?random=1500539990888&cv=8&fst=1500539990888&num=1&value=0&currency_code=EUR&label=5lowCM6K6WkQo4L78QM&oid=gtm.js&guid=ON&eid=27391102&u_h=1080&u_w=1920&u_ah=1080&u_aw=1920&u_cd=24&u_his=2&u_tz=120&u_java=false&u_nplug=4&u_nmime=5&frm=0&url=http%3A%2F%2Fwww.assurance-voyage.lu%2Fen%2Fassurance-foyer-voyage&ref=http%3A%2F%2Fwww.assurance-voyage.lu%2F&tiba=Foyer%20voyage%20%7C%20Make%20sure%20you%20have%20great%20holiday&async=1&fmt=4')
+  
+  // Required for Previews and Experiments
+  //script(src="//code.jquery.com/jquery-2.1.1.min.js")
+  script
+    = ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
+  script(src="//static.cdn.prismic.io/prismic.min.js")
+  script(src='/javascript/lightSlider/js/lightslider.js')
+  script(src='/javascript/main.js')
+
+body#page-top.index(data-wio-id="activeDoc.id")
+
+  include ./layout/navigation.pug
+  
+  block body
+    
+  include ./layout/footer.pug
+
+
+
+

@@ -1,0 +1,42 @@
+footer
+  .container
+    .row
+      div
+        span.foyer-logo
+    .row
+      ul.list-inline.quicklinks
+        li.info-legal
+          a(href='http://www.foyer.lu/en/legal-disclaimer') Legal disclaimer
+    .row
+      div
+        span.copyright Copyright © 2017 FOYER, Luxembourg, Europe
+// Contact Form JavaScript
+script(src='javascript/contact_me.js')
+// Theme JavaScript
+script(src='javascript/agency.js')
+// Google Tag Manager
+noscript
+  | <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WBL77Z"
+  | height="0" width="0" style="display:none;visibility:hidden"></iframe>
+script.
+  (function(w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+  'gtm.start': new Date().getTime(),
+  event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s),
+  dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src =
+  '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-WBL77Z');
+// End Google Tag Manager
+div(style='background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;')
+  div(style='width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)')
+  .g-recaptcha-bubble-arrow(style='border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;')
+  .g-recaptcha-bubble-arrow(style='border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;')
+  div(style='z-index: 2000000000; position: relative;')
+    iframe(src='https://www.google.com/recaptcha/api2/bframe?hl=en&v=r20170712134223&k=6Lf7KBcTAAAAAIZ9VwTXIopP2zkfhcvT270BW_tW#ppm6vevnyohn', title='recaptcha challenge', frameborder='0', scrolling='no', sandbox='allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation', name='ppm6vevnyohn', style='width: 100%; height: 100%;', kwframeid='2')

@@ -1,0 +1,49 @@
+// Navigation
+nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top
+  .navbar-header.page-scroll
+    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+      span.sr-only Toggle navigation
+      i.fa.fa-bars
+    a.navbar-brand.page-scroll(href='#page-top')
+      span.foyer-voyage
+  #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-center
+      li.hidden.active
+        a(href='#page-top')
+      li
+        a.page-scroll(href='#assurance-voyage') TRAVEL INSURANCE
+      li
+        a.page-scroll(href='#loyergaranti') COVER
+      li
+        a.page-scroll(href='#offres') PRODUCTS
+      li
+        a.page-scroll(href='#contact') CONTACT
+      li
+        a.page-scroll(href='#searchagent') FIND AN AGENT
+    ul.nav.navbar-nav.navbar-right
+      li
+        .shares
+          script.
+            var title = $('head meta[name="og:title"]').attr('content');
+            var desc = $('head meta[name="og:description"]').attr('content');
+            var siteName = $('head meta[name="og:site_name"]').attr('content');
+            $(function() {
+            $('#fb-root').click(function(e) {
+            e.preventDefault();
+            var url = 'https://www.facebook.com/sharer/sharer.php?u=' + document.location.href + '&title=' + title;
+            var myWindow = window.open(url, "", "width=640, height=480");
+            });
+            $('#in-root').click(function(e) {
+            e.preventDefault();
+            var url = 'https://www.linkedin.com/shareArticle?mini=true&url=' + document.location.href + '&title=' + title + '&summary=' + desc + '&source=' + siteName;
+            var myWindow = window.open(url, "", "width=520, height=570");
+            });
+            });
+          span.share-text Share
+          span#fb-root
+          span#in-root
+      li
+        .lang
+          a(style='color: #00c3ff; text-decoration:none;') EN
+          a(href='/fr/assurance-foyer-voyage') FR
+          a(href='/de/assurance-foyer-voyage') DE
