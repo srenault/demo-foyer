@@ -1,0 +1,32 @@
+// Le produit Section
+section#assurance-voyage.bg-light-gray.bloc-voyage
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading
+          != RichText.asText(slice.primary['title-section'])
+        p.text-muted.text-justify
+          != RichText.asText(slice.primary['description-section'])
+        p.text-muted.text-bold
+          != RichText.asText(slice.primary['description_bold'])
+
+    .row.marketing.block-formule
+      - var count = 0
+      each product in slice.items
+        if count == 0
+          .col-lg-3.col-lg-offset-3.col-md-4.col-sm-6.col-md-offset-2.col-xs-12
+            .text-formule.block-formule-left
+              h4
+                b
+                  != RichText.asText(product.titre)
+              p
+                != RichText.asText(product.description)
+        else if count == 1
+          .col-lg-3.col-md-4.col-sm-6.col-xs-12
+            .text-formule.block-formule-right
+              h4
+                b
+                  != RichText.asText(product.titre)
+              p
+                != RichText.asText(product.description)
+        - count++

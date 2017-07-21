@@ -2,38 +2,34 @@ block variables
 
 doctype html(lang='en')
 head
-  title prismic.io Demo
-  meta(name="viewport", content="width=device-width, initial-scale=1")
+  -// Meta Data
+  title Foyer voyage | Make sure you have great holiday
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(charset='utf-8')
+  meta(name='description', content='Foyer travel insurance offers global coverage which takes into account risks linked to private travel, solo or family trips, no matter the destination or the departure period.')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  
+  -// Styles
+  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  //link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+  link(rel='stylesheet', href='/stylesheets/foyer_fonts.css')
+  link(type='text/css', rel='stylesheet', href='/javascript/lightSlider/css/lightslider.css')
+  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  link(href='/stylesheets/agency.css', rel='stylesheet')
+  
+  -// Javascript
   // <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
   // <script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script>
   // <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-WBL77Z"></script>
   script(type='text/javascript', async='', src='https://www.gstatic.com/recaptcha/api2/r20170712134223/recaptcha__en.js')
-  script(src='javascript/jquery.min.js')
-  script(src='javascript/jquery.cookie.js')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge')
-  meta(charset='utf-8')
-  meta(name='description', content='Foyer travel insurance offers global coverage which takes into account risks linked to private travel, solo or family trips, no matter the destination or the departure period.')
-  meta(name='og:title', content='Travel Insurance Foyer Voyage')
-  meta(name='og:type', content='website')
-  meta(name='og:site_name', content='Foyer voyage')
-  meta(name='og:description', content='Foyer travel insurance offers global coverage which takes into account risks linked to private travel, solo or family trips, no matter the destination or the departure period.')
-  meta(name='og:url', content='http://www.assurance-voyage.lu/en/assurance-foyer-voyage')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  title Foyer voyage | Make sure you have great holiday
-  link(href='http://www.assurance-voyage.lu/en/assurance-foyer-voyage', rel='canonical')
-  meta(name='og:image', content='http://www.foyer.lu/lp/voyage/img/og_image-en.jpg')
-  link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
-  link(rel='stylesheet', href='stylesheets/font-awesome.min.css')
-  link(rel='stylesheet', href='stylesheets/foyer_fonts.css')
-  link(type='text/css', rel='stylesheet', href='/javascript/lightSlider/css/lightslider.css')
-  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet')
-  link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
-  script(src='javascript/bootstrap.min.js')
-  script(src='javascript/jquery.easing.min.js')
-  link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
-  link(href='stylesheets/agency.css', rel='stylesheet')
+  script(src='/javascript/jquery.min.js')
+  script(src='/javascript/jquery.cookie.js')
+  script(src='/javascript/bootstrap.min.js')
+  script(src='/javascript/jquery.easing.min.js')
   // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-  script(src='javascript/querySelector.polyfill.js')
+  script(src='/javascript/querySelector.polyfill.js')
   // WARNING: Respond.js doesn't work if you view the page via file://
   //if lt IE 9
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
@@ -49,12 +45,12 @@ head
   script(src='/javascript/lightSlider/js/lightslider.js')
   script(src='/javascript/main.js')
 
-body#page-top.index(data-wio-id="activeDoc.id")
+body#page-top.index(data-wio-id=activeDoc.id)
 
   include ./layout/navigation.pug
   
   block body
-    
+  
   include ./layout/footer.pug
 
 

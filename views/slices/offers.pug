@@ -1,0 +1,25 @@
+// Les offres Section
+section#offres.bg-light-white
+  .container
+    .row
+      .col-sm-12.text-center.block-identifiez
+        h2.section-heading PRODUCTS
+          != RichText.asText(slice.primary['title-section'])
+        h3.foyer-highlight.space-top-20.space-bottom-35 DEFINE YOUR TRAVELLER PROFILE!
+          != RichText.asText(slice.primary.description_bold)
+        div.text-muted.text-justify
+          != RichText.asHtml(slice.primary['description-section'])
+          
+    .row.bloc-team-member
+      each offer in slice.items
+        .col-sm-4.col-xs-12
+          .team-member.center-block
+            img.img-circle.img-responsive(src=offer.image.url, alt='')
+            != RichText.asHtml(offer.titre)
+            div.text-muted
+              div.foyer-highlight.center-block
+                != RichText.asHtml(offer.description)
+              br
+              != RichText.asHtml(offer.description_de_la_formule_ou_offre)
+            - var link = offer.link.url ? offer.link.url : '#contact'
+            a.page-scroll.btn.btn-xl.frm-presel.btncontratoffres.btncontratannuel(href=link, data-frm-presel='assurance_voyage_ann') !{offer.linkText}

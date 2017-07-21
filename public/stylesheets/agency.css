@@ -197,9 +197,16 @@ fieldset[disabled] .btn-xl.active {
  
 }
 .navbar-custom .navbar-toggle {
+  width: 12px;
   height: 38px;
   border: none;
   color:#fff;
+}
+.navbar-custom .navbar-toggle img {
+  position: absolute;
+  left: -3px;
+  top: 13px;
+  width: 14px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -523,6 +530,9 @@ header .intro-text .intro-heading {
       font-family: "Raleway-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 20px;
   }
+  .timeline-heading h4 {
+      font-weight: normal;
+  }
   .timeline-body p{
       width: 250px;
       margin: auto;
@@ -531,6 +541,7 @@ header .intro-text .intro-heading {
       font-size: 16px;
       font-family: "Raleway-Semi-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 22px;
+      color: #777777;
   }
     
   .block-timeline-bagage, .block-timeline-annulation, .block-timeline-medicaux,.block-timeline-assistance {
@@ -566,6 +577,11 @@ header .intro-text .intro-heading {
   .block-identifiez{
       margin-bottom: 35px;
   }
+  
+  .block-identifiez p {
+      color: #777777;
+      font-size: 18px;
+  }
  .agent .title {
     font-size: 28px;
     padding-top: 10px;  
@@ -590,6 +606,7 @@ header .intro-text .intro-heading {
   font-size: 16px;
   font-family: "Raleway-bold",  "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 34px;
+  text-transform: uppercase;
 }
 
 .team-member p {
@@ -1343,6 +1360,17 @@ label { font-family: "DINOT-Bold" }
     line-height: 30px;
     padding: 10px 0;
 }
+.team-member .foyer-highlight p { 
+    color: #00c3ff;  
+    font-family: "Raleway",  "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 25px; 
+    line-height: 30px;
+    padding: 10px 0;
+    font-weight: normal;
+}
+.team-member .foyer-highlight p strong {
+    font-family: "Raleway-bold",  "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
 .price {
     font-size: 32px;
     font-family: "DINOT-Bold";
@@ -1493,6 +1521,11 @@ label { font-family: "DINOT-Bold" }
         height: 63px;
         white-space: normal;
     }
+    .team-member .foyer-highlight p {
+        line-height: 30px;
+        height: 63px;
+        white-space: normal;
+    }
 }
 
 @media (max-width: 992px){
@@ -1501,7 +1534,9 @@ label { font-family: "DINOT-Bold" }
     }
 }
 @media (min-width: 993px){
+/*
     .team-member p{
         height: 187px;
     }
+*/
 }

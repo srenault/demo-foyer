@@ -1,6 +1,6 @@
 module.exports = {
 
-  apiEndpoint: 'https://levi-intercom-help.prismic.io/api/v2',
+  apiEndpoint: 'https://foyer-demo.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
   // accessToken: 'xxxxxx',

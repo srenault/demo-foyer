@@ -1,3 +1,7 @@
+/*jslint node: true */
+/*jshint esnext: true */
+"use strict";
+
 const Prismic = require('prismic-javascript');
 const { RichText, Link } = require('prismic-dom');
 const app = require('./config');
@@ -67,19 +71,21 @@ app.use(I18NUrl(), (req, res, next) => {
 
 //redirect / to default language from i18n.json
 app.get('/', (req, res, next) => {
-  res.render('landing-page');
-  //res.redirect(I18N.default);
+//  res.render('landing-page');
+  res.redirect(I18N.default);
 });
 
 // Route for the homepage
 app.get(I18NUrl('/'), (req, res, next) => {
-  req.prismic.api.getSingle("homepage", I18NConfig(req))
-  .then((home) => {
-    res.render('homepage', { home });
-  })
-  .catch((error) => {
-    next(`error when retriving homepage ${error.message}`);
-  });
+  res.redirect('/' + req.params.lang + '/page/foyer-voyage');
+	
+//	req.prismic.api.getSingle("homepage", I18NConfig(req))
+//  .then((home) => {
+//    res.render('homepage', { home });
+//  })
+//  .catch((error) => {
+//    next(`error when retriving homepage ${error.message}`);
+//  });
 });
 
 // Route for pages
@@ -89,7 +95,7 @@ app.get(I18NUrl('/page/:uid'), (req, res, next) => {
   req.prismic.api.getByUID("page", uid, I18NConfig(req))
   .then((page) => {
     if(!page) res.status(404).send('page not found');
-    else res.render('page', { page });
+    else res.render('landing-page', { page });
   })
   .catch((error) => {
     next(`error when retriving page ${error.message}`);

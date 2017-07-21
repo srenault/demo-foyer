@@ -3,7 +3,7 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top
   .navbar-header.page-scroll
     button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
       span.sr-only Toggle navigation
-      i.fa.fa-bars
+      img(src="/images/hamburger.png")
     a.navbar-brand.page-scroll(href='#page-top')
       span.foyer-voyage
   #bs-example-navbar-collapse-1.collapse.navbar-collapse
@@ -44,6 +44,11 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top.affix-top
           span#in-root
       li
         .lang
-          a(style='color: #00c3ff; text-decoration:none;') EN
-          a(href='/fr/assurance-foyer-voyage') FR
-          a(href='/de/assurance-foyer-voyage') DE
+          for lang in I18N.languages
+            
+            if lang.key === I18N.current
+              a(style='color: #00c3ff; text-decoration:none;') !{lang.label}
+            else
+              - var alternateDocLink = activeDoc.alternate_languages.find(al => al.lang === lang.key);
+              - var alternateUrl = selected ? ctx.linkResolver(activeDoc) : (alternateDocLink ? ctx.linkResolver(alternateDocLink) : '');
+              a(href=alternateUrl) !{lang.label}

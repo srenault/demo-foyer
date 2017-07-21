@@ -1,8 +1,8 @@
 {
   "languages": [
-    {"key": "fr-fr", "label": "Francais"},
-    {"key": "en-gb", "label": "English"},
-    {"key" : "de-de", "label" : "German"}
+    {"key": "en-gb", "label": "EN"},
+    {"key": "fr-lu", "label": "FR"},
+    {"key" : "de-de", "label" : "DE"}
   ],
-  "default": "fr-fr"
+  "default": "fr-lu"
 }

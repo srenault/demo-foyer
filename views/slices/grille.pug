@@ -1,0 +1,48 @@
+// Les garanties Section
+section#loyergaranti.bg-white-garanties.block-garanties
+  .container
+    .row
+      .col-xs-12.text-center
+        h2.section-heading
+          != RichText.asText(slice.primary.title_section)
+        p.text-muted.text-Semibold.space-bottom-30
+          != RichText.asText(slice.primary.description_de_la_section)
+    .row.marketing
+      .col-sm-6.col-lg-5.col-lg-offset-1.col-xs-12
+        .block-timeline-bagage
+          .timeline-image
+            img.img-valise.img-responsive(src=slice.items[0].image_garanties.url, alt='')
+          .timeline-panel
+            .timeline-heading
+              h4
+                != RichText.asText(slice.items[0].nom_garanties)
+            .timeline-body
+              != RichText.asHtml(slice.items[0].description_de_la_garantie)
+        .block-timeline-assistance
+          .timeline-image
+            img.img-assistance.img-responsive(src=slice.items[1].image_garanties.url, alt='')
+          .timeline-panel
+            .timeline-heading
+              h4
+                != RichText.asText(slice.items[1].nom_garanties)
+            .timeline-body
+              != RichText.asHtml(slice.items[1].description_de_la_garantie)
+      .col-sm-6.col-lg-5.col-xs-12
+        .block-timeline-annulation
+          .timeline-image
+            img.img-x.img-responsive(src=slice.items[2].image_garanties.url, alt='')
+          .timeline-panel
+            .timeline-heading
+              h4
+                != RichText.asText(slice.items[2].nom_garanties)
+            .timeline-body
+              != RichText.asHtml(slice.items[2].description_de_la_garantie)
+        .block-timeline-medicaux
+          .timeline-image
+            img.img-medicaux.img-responsive(src=slice.items[3].image_garanties.url, alt='')
+          .timeline-panel
+            .timeline-heading
+              h4
+                != RichText.asText(slice.items[3].nom_garanties)
+            .timeline-body
+              != RichText.asHtml(slice.items[3].description_de_la_garantie)
