@@ -4,6 +4,7 @@
 - var headerDescription = page.data.banner_top[0].description
 - var headerButtonText = page.data.banner_top[0].bouton_label
 - var headerButtonLink = page.data.banner_top[0].bouton_link.url
+- var headerButtonColor = page.data.banner_top[0].bouton_color ? page.data.banner_top[0].bouton_color : "#00c3ff"
 header(style="background-image: url('" + headerBannerUrl + "');")
   .block-opacity
     .container
@@ -12,5 +13,5 @@ header(style="background-image: url('" + headerBannerUrl + "');")
         p.bordure
         p.text-header
           != RichText.asText(headerDescription)
-        a.page-scroll.btn.btn-xl.btncontact.btntroismois(href=headerButtonLink ? headerButtonLink : '#offres')
+        a.page-scroll.btn.btn-xl.btncontact.btntroismois(href=headerButtonLink ? headerButtonLink : '#offres' style="background-color:" + headerButtonColor + "; border-color:" + headerButtonColor + ";")
           != RichText.asText(headerButtonText)

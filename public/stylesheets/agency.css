@@ -112,8 +112,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
+/*
   background-color: #00c3ff;
   border-color: #00c3ff;
+*/
   font-family: "Raleway-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
