@@ -420,7 +420,7 @@ header .intro-text {
   margin-top:39.5%;
 }
 header .intro-text p{
- color: #00c3ff;
+/* color: #00c3ff;*/
  font-size: 60px;
  line-height:70px;
  text-transform: uppercase;

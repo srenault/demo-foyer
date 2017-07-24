@@ -8,7 +8,7 @@
 header(style="background-image: url('" + headerBannerUrl + "');")
   .block-opacity
     .container
-      .intro-text
+      .intro-text(style="color:"+ headerButtonColor + ";")
         != RichText.asHtml(headerTitle, ctx.linkResolver)
         p.bordure
         p.text-header
