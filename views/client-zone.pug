@@ -1,0 +1,57 @@
+doctype html
+// saved from url=(0034)http://mybrecette.foyer.lu/accueil
+html.no-js(lang='en')
+  // paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+  //if lt IE 7
+    html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='en')  
+  //if IE 7
+    html.no-js.ie7.lt-ie9.lt-ie8(lang='en')  
+  //if IE 8
+    html.no-js.ie8.lt-ie9(lang='en')  
+  //if IE 9
+    html.no-js.ie9(lang='en')  
+  // [if gt IE 8] <!
+  // <![endif]
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Foyer - Espace Client
+    include ./client-zone/head.pug
+    link(rel='stylesheet', href='/stylesheets/client-zone.css', type='text/css', charset='utf-8')
+    script(type='text/javascript', charset='UTF-8', async='', src='/javascript/foyer.js')
+    
+  body.langfr
+    #wrapper(style='z-index:-3')
+      
+      include ./client-zone/header.pug
+      
+      #application(style='z-index:-1')
+        .container
+          // Header and Nav
+          #siteContent
+            
+            include ./client-zone/content.pug
+            
+            - var firstBanner = true
+            each bannerAd in banner.data.banners
+              - var bannerImage = bannerAd.banner_image.url
+              - var bannerLink = Link.url(bannerAd.button_link, ctx.linkResolver)
+              - var bannerText = bannerAd.banner_text
+              - var buttonText = bannerAd.button_text
+              - var bannerTarget = "banner-" + bannerAd.target
+              - var hideStyle = " display: none;";
+              if firstBanner
+                - firstBanner = false
+                - hideStyle = ""
+              div.client-banner(class=bannerTarget, style="background-image: url('" + bannerImage + "');" + hideStyle)
+                div.client-banner-overlay
+                div.client-banner-text
+                  != RichText.asHtml(bannerText, ctx.linkResolver)
+                a.client-banner-button(href=bannerLink)  !{RichText.asText(buttonText, ctx.linkResolver)}
+            
+            
+            select#target-select
+              each bannerAd in banner.data.banners
+                option(value="banner-"+bannerAd.target) !{bannerAd.target}
+            
+      include ./client-zone/footer.pug
+      

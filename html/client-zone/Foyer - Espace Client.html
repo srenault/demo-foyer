@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://mybrecette.foyer.lu/accueil -->
+<html class="no-js" lang="en">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>	  <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <title>Foyer - Espace Client</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="http://mybrecette.foyer.lu/public/images/favicon.png">
+  <link rel="stylesheet" href="./Foyer - Espace Client_files/global.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="./Foyer - Espace Client_files/udbBoxes.css" type="text/css" charset="utf-8">
+  <script type="text/javascript" charset="UTF-8" async="" id="MFBActor" src="./Foyer - Espace Client_files/action"></script>
+  <script type="text/javascript" charset="utf-8">
+    var path = '/';
+    path = path.substr(0, path.length - 1);
+
+  </script>
+  <script src="./Foyer - Espace Client_files/global.js.download" type="text/javascript" charset="utf-8"></script>
+  <script type="text/html" charset="utf-8" id="_tmpl_modal">
+    <div id="<%=id%>" title="<%=title%>" data-type="Modal" data-selector="<%=selector%>">
+      <%=content%>
+    </div>
+  </script>
+  <script type="text/html" charset="utf-8" id="_tmpl_pager-case">
+    <a href="" <% if(active){ %>class="active" <% } %>data-page="<%= i %>"><%= i %></a>
+  </script>
+  <script type="text/html" charset="utf-8" id="_tmpl_pager-more">
+    <span class='more'> </span>
+  </script>
+  <!--[if IE 8]><script src='/public/javascripts/libs/json3.min.js' type="text/javascript" charset="utf-8"></script><![endif]-->
+  <script src="./Foyer - Espace Client_files/udb.js.download" type="text/javascript" charset="utf-8"></script>
+  <script src="./Foyer - Espace Client_files/i18n-fr.js.download"></script>
+  <!-- IE Fix for HTML5 Tags -->
+  <script src="./Foyer - Espace Client_files/html5.js.download" type="text/javascript" charset="utf-8"></script>
+  <script src="./Foyer - Espace Client_files/jquery.cookie.js.download" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    jQuery(function($) {
+      $("[pilotedisabled], [pilotedisabled] a, a[pilotedisabled]").attr("disabled", "disabled")
+        .css("cursor", "not-allowed")
+        .css("color", "lightGrey")
+        .css("border-bottom", "none")
+        .attr("title", "Cette fonctionnalité n'est pas disponible")
+        .unbind("click")
+        .click(function(e) {
+          e.preventDefault
+          e.stopPropagation
+          return false
+        })
+        .children("i").css("color", "lightGrey")
+    });
+
+  </script>
+</head>
+
+<body class="langfr">
+  <div id="wrapper" style="z-index:-3">
+    <div id="wrapper-header" style="z-index:-2" class="Recette">
+      <div class="container">
+        <div class="row">
+          <div id="headerpage">
+            <div class="span3 headerLogo" style="text-align:left">
+              <a href="http://mybrecette.foyer.lu/accueil" id="logo"></a>
+              <div class="bold italic alignCenter white">Recette</div>
+            </div>
+            <div class="span9 headerOther">
+              <div class="userData introAccueil" intro-order-step="2" intro-clef-message="intro.accueil.step.2">
+                <h1>Monsieur ANTOINE NAVARRO</h1>
+                <div><label>Identifiant : </label> 1000015</div>
+                <div><label>Dernière connexion : </label> 13/07/2017 16:37</div>
+                <div class="marginTop10">
+                  <i class="icon-signout icon-large marginRight5 red"></i>
+                  <a href="http://mybrecette.foyer.lu/logout" logoutlogurl="/log/deconnexion" ssologouturl="https://myrecette.foyer.lu/pxpadmin/bin/disconnect.cgi" title="Se déconnecter" id="logout" message="Etes-vous sûr de vouloir vous déconnecter de votre Espace Client ?">Se déconnecter</a>
+                </div>
+              </div>
+              <div style="float:left;">
+                <form action="http://mybrecette.foyer.lu/changeUser" method="POST" accept-charset="utf-8" enctype="multipart/form-data" data-type="Form" data-uid="1">
+                  <input type="hidden" name="csrfToken" value="">
+                  <input type="hidden" name="changeUser" value="true">
+                  <input type="text" name="noPersonne" size="10" placeholder="Change user..">&nbsp;<input type="submit" class="button action" value="ok">
+                </form>
+              </div>
+              <div class="langage">
+                <a href="http://mybrecette.foyer.lu/langage/fr" id="fr_btn" class="bold">FR</a> |
+                <a href="http://mybrecette.foyer.lu/langage/de" id="de_btn">DE</a>
+              </div>
+              <div class="headerContact">
+                <a href="http://www.foyer.lu/">Foyer.lu</a> |
+                <a href="http://mybrecette.foyer.lu/messages/ecrire/depuis/CONTACT">
+		Contact
+	</a>
+              </div>
+              <div class="white marginTop10 marginLeft10 floatLeft"><label><input id="skipSas" type="checkbox">Ignore Sas</label></div>
+              <div class="welcome introAccueil" intro-order-step="1" intro-clef-message="intro.accueil.step.1">
+                Bienvenue dans votre Espace Client Foyer qui vous permet d'accéder à nos services en ligne.
+              </div>
+              <div class="menu" id="mainSecureMenu">
+                <ul>
+                  <li class="icon home introAccueil" intro-order-step="8" intro-clef-message="intro.accueil.step.8">
+                    <a href="http://mybrecette.foyer.lu/accueil" title="Accueil"></a>
+                  </li>
+                  <!-- TODO tester si actif afficher sinon hide interceptors.AppContext.currentUser.connexion.sdActivationSeezam.isDefined --DONE  -->
+                  <li class="icon mail introAccueil" intro-order-step="6" intro-clef-message="intro.accueil.step.6">
+                    <a href="http://mybrecette.foyer.lu/messages/recus">
+                      <i class="icon-envelope" title="Ma messagerie"></i>
+                      <span class="vignet" title="" style="display: block">10</span>
+                    </a>
+                  </li>
+                  <li class="notIcon">
+                    <a href="http://mybrecette.foyer.lu/accueil#">Mon profil</a>
+                    <ul class="seezamNo">
+                      <li>
+                        <ul class="menuInlineGroup">
+                          <li><a href="http://mybrecette.foyer.lu/donnees/coordonnees/personnelles" class="noPadding"><span class="subtitle">Mes données personnelles</span></a></li>
+                          <li><a href="http://mybrecette.foyer.lu/donnees/coordonnees/personnelles">Modifier mes coordonnées personnelles</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/donnees/menage">Mettre à jour ma situation familiale</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/donnees/coordonnees/bancaires">Modifier mes coordonnées bancaires</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/donnees/acces/mot-de-passe/modifier">Modifier mes codes d'accès</a></li>
+                        </ul>
+                        <ul class="menuInlineGroup">
+                          <li><span class="subtitle">Mes e-services</span></li>
+                          <li><a href="http://mybrecette.foyer.lu/messages/recus">Ma messagerie</a></li>
+                          <!-- TODO tester si actif afficher --DONE  -->
+                          <!--
+					<li><a href="JavaScript:window.safelyOpen('https://ssoluxtrustt.lefoyer.lu/foyerldap/manage', '', 'resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')" >Gérer mon (mes) certificat(s) Luxtrust</a></li>
+					-->
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="notIcon">
+                    <a href="http://mybrecette.foyer.lu/accueil#">Mes contrats</a>
+                    <ul class="seezamNo">
+                      <li>
+                        <ul class="menuInlineGroup">
+                          <li><span class="subtitle">Mes contrats</span></li>
+                          <li>
+                            <div class="picture AUT opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-04-03-22.15.32.820203" class="inline-block paddingRight0">mobilé 20368898 - AUDI - EH1542 </a></div>
+                          </li>
+                          <li>
+                            <div class="picture AUT opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.182646" class="inline-block paddingRight0">mobilé 20369124 - MAZDA - 123456 </a></div>
+                          </li>
+                          <li>
+                            <div class="picture MRH opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-05-10-20.53.06.074020" class="inline-block paddingRight0">reebou family 20368899 - 1930 - LUXEMBOURG  </a></div>
+                          </li>
+                          <li>
+                            <div class="picture SAN opened small marginLeft5"></div>
+                            <div class="inline-block">
+                              <a href="http://mybrecette.foyer.lu/contrat/2017-03-16-21.35.03.012679" class="inline-block paddingRight0">medicis 61020767 - 1 assuré(s) 
+                                <div data-type="IconInfoTitle" class="color2" data-uid="2">
+                                  <i class="icon-info-sign medium"></i>
+                                  <div class="overlay information" style="display: none">
+                                    ANTOINE NAVARRO<br>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="picture SAN opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.183129" class="inline-block paddingRight0">medicis 61020826 - 1 assuré(s) 
+                              <div data-type="IconInfoTitle" class="color2" data-uid="3">
+                                <i class="icon-info-sign medium"></i>
+                                <div class="overlay information" style="display: none">
+
+                                  ANTOINE NAVARRO<br>
+                                </div>
+                              </div>
+                             </a></div>
+                          </li>
+                          <li>
+                            <div class="picture PEP opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.453969" class="inline-block paddingRight0">focus 5112000035 - 1 assuré(s) 
+                            <div data-type="IconInfoTitle" class="color2" data-uid="4">
+                              <i class="icon-info-sign medium"></i>
+                              <div class="overlay information" style="display: none">
+
+                                ANTOINE NAVARRO<br>
+                              </div>
+                            </div>
+                           </a></div>
+                          </li>
+                          <li>
+                            <div class="picture PNS opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.454870" class="inline-block paddingRight0">horizont60 8060000977 - 1 assuré(s) 
+                            <div data-type="IconInfoTitle" class="color2" data-uid="5">
+                              <i class="icon-info-sign medium"></i>
+                              <div class="overlay information" style="display: none">
+
+                                ANTOINE NAVARRO<br>
+                              </div>
+                            </div>
+                           </a></div>
+                          </li>
+                          <li>
+                            <div class="picture INV opened small marginLeft5"></div>
+                            <div class="inline-block"><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.456254" class="inline-block paddingRight0">flexivie 8137000978 - 1 assuré(s) 
+                            <div data-type="IconInfoTitle" class="color2" data-uid="6">
+                              <i class="icon-info-sign medium"></i>
+                              <div class="overlay information" style="display: none">
+
+                                ANTOINE NAVARRO<br>
+                              </div>
+                            </div>
+                           </a></div>
+                          </li>
+                        </ul>
+                        <ul class="menuInlineGroup">
+                          <li><span class="subtitle">Mes documents</span></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/documentsRecus">Mon historique de documents reçus</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/obtenir/attestation-certificat">Demander une attestation/un certificat</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="notIcon">
+                    <a href="http://mybrecette.foyer.lu/accueil#">Mes démarches</a>
+                    <ul class="seezamNo">
+                      <li>
+                        <ul class="menuInlineGroup">
+                          <li><span class="subtitle">Mes sinistres &amp; prestations</span></li>
+                          <li><a href="http://mybrecette.foyer.lu/demarches/sinistre/declarer">Déclarer un sinistre</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/demarches/sinistre/suivi">Suivre mes sinistres</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/demarches/prestation/remboursement">Demander un remboursement santé</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/demarches/prestation/prise-en-charge">Demander une prise en charge</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/demarches/prestation/suivi">Suivre mes dossiers santé</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/assisto">Assisto: L'Application e-constat</a></li>
+                        </ul>
+                        <ul class="menuInlineGroup">
+                          <li><span class="subtitle">Mes paiements</span></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/situationCompte">Consulter ma situation de compte</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/factures">Régler mes factures</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/services/domicilier">Mettre en place un paiement mensuel</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="notIcon">
+                    <a href="http://mybrecette.foyer.lu/accueil#">Solutions Foyer</a>
+                    <ul class="seezamNo">
+                      <li>
+                        <ul class="menuInlineGroup">
+                          <li><a href="http://mybrecette.foyer.lu/solutions/se-deplacer-en-voiture">Rester mobile</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/solutions/se-loger-et-vivre-sereinement">Se loger et vivre sereinement</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/solutions/proteger-sa-sante">Protéger sa santé</a></li>
+                        </ul>
+                        <ul class="menuInlineGroup">
+                          <li><a href="http://mybrecette.foyer.lu/solutions/epargner-et-proteger-les-siens">Epargner et protéger ses proches</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/solutions/preparer-sa-retraite">Préparer sa retraite</a></li>
+                          <li><a href="http://mybrecette.foyer.lu/solutions/investir">Investir</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            function makeid() {
+              var text = "";
+              var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+              for (var i = 0; i < 24; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+              console.log("idmongo")
+              console.log(text)
+              return text;
+            }
+            var personneUrl = "/mfb/getPersonneMFB/1000015"
+            $(document).ready(function() {
+              console.log("test")
+              $.get(personneUrl, function() {
+                  console.log("success");
+                })
+                .done(function(response) {
+                  console.log(response)
+                  var mongoId = makeid()
+                  /** MFB **/
+                  // Review the commented lines. Insert real values for the placeholders
+                  var _Mfb_ud = {
+                    r_age: response.data.age, //Transmettre une tranche d'âge avec des intervalles de 5 ans.
+                    r_titre: response.data.titre, //Titre d'une personne
+                    r_nationalite: response.data.nationalite, //Nationalité (liste pays)
+                    r_langue: response.data.langue, //Langue de correspondance
+                    r_id_evt: mongoId //Identifiant événement des ASE pour Questionnaire MyFeelback côté FOYER
+                  };
+                  (function() {
+                    var mfb = document.createElement('script');
+                    mfb.type = 'text/javascript';
+                    mfb.charset = 'UTF-8';
+                    mfb.async = true;
+                    mfb.id = 'MFBActor';
+                    mfb.src = 'https://actorssl-5637.kxcdn.com/actor/ae8aa4e5d5205d1995c3e4194ccb2a15-800/action';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(mfb, s);
+                  })();
+                });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div id="application" style="z-index:-1">
+      <div class="container">
+        <!-- Header and Nav -->
+        <div id="siteContent">
+          <div class="span12 breadcrumbContainer">
+          </div>
+          <div class="row">
+            <!-- Nav Sidebar -->
+            <div id="quicknav-bar" class="span3">
+              <div class="bloc " id="boxAlertes">
+                <div class="header ">
+                  <i class="icon-exclamation-sign"></i>
+                  <p class="options">
+                  </p>
+                  <h1>Alerte(s)
+                  </h1>
+                </div>
+                <div class="body content">
+                  <div class="menuLink">
+                    <div>
+                      <a href="http://mybrecette.foyer.lu/messages/recus/from/alertes">
+		
+			Nouveaux messages (10)
+		
+		</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="introAccueil" intro-order-step="7" intro-clef-message="intro.accueil.step.7" intro-position="right">
+
+
+                <script>
+                  $(document).ready(function() {
+                    $(".horaireAgentLink").click(function(e) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      $horaireContainer = $(this).closest("p").siblings(".horaireAgentContainer");
+                      $horaireContainer.toggle("fast")
+                    });
+                  });
+
+                </script>
+
+
+
+
+
+
+
+
+
+
+                <div class="bloc " data-type="BoxAccordion" id="boxAgent" data-uid="7">
+
+
+
+                  <div class="header ">
+
+
+                    <p class="options">
+
+                    </p>
+                    <h1>Contacter mes agents</h1>
+
+                  </div>
+
+
+
+
+                  <dl class="list ">
+
+
+
+
+
+
+                    <dt class="">
+		<i class="icon-large floatRight icon-minus-sign"></i>
+		ALPHA
+	</dt>
+                    <dd style="display: block;">
+                      <img class="imgAgent" src="./Foyer - Espace Client_files/10" alt="ALPHA" title="ALPHA">
+
+                      <p class="bold">
+                        129, RUE DE MERL<br> L-2146 LUXEMBOURG<br>
+                      </p>
+                      <p>
+
+                        Tél : 44 17 63 <br>
+
+
+                      </p>
+                      <p>
+                        <i class="icon-envelope marginRight5"></i><a href="http://mybrecette.foyer.lu/messages/ecrire_to?to=10">Ecrire à mon agent</a><br>
+                        <i class="icon-map-marker icon-large marginRight5"></i>
+
+                        <a target="_blank" href="http://mybrecette.foyer.lu/googleMaps/129,%20RUE%20DE%20MERL%20L-2146%20LUXEMBOURG">Plan d'accès</a> - <a href="http://mybrecette.foyer.lu/accueil#" title="ALPHA" class="horaireAgent" message="
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Lundi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				12:00 - 18:30
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Mardi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				12:00 - 18:30
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Mercredi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				12:00 - 18:30
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Jeudi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				12:00 - 20:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Vendredi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				12:00 - 18:30
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Samedi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				14:00 - 17:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Dimanche&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				
+				Fermé
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Fermé
+			&lt;/div&gt;
+			
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+">Horaires</a>
+
+                      </p>
+                    </dd>
+
+
+
+
+
+
+                    <dt class="closed">
+		<i class="icon-large floatRight icon-plus-sign"></i>
+		ALVES CARLOS
+	</dt>
+                    <dd class="hide">
+                      <img class="imgAgent" src="./Foyer - Espace Client_files/1175" alt="ALVES CARLOS" title="ALVES CARLOS">
+
+                      <p class="bold">
+                        2, RUE DES ARTISANS<br> L-3712 RUMELANGE<br>
+                      </p>
+                      <p>
+
+                        Tél : 27 99 11 01 <br> Gsm : 661 777 899<br>
+
+                      </p>
+                      <p>
+                        <i class="icon-envelope marginRight5"></i><a href="http://mybrecette.foyer.lu/messages/ecrire_to?to=1175">Ecrire à mon agent</a><br>
+                        <i class="icon-map-marker icon-large marginRight5"></i>
+
+                        <a target="_blank" href="http://mybrecette.foyer.lu/googleMaps/49.4605401,6.031335">Plan d'accès</a> - <a href="http://mybrecette.foyer.lu/accueil#" title="ALVES CARLOS" class="horaireAgent" message="
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Lundi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Mardi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Mercredi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Jeudi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				08:30 - 12:00
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Vendredi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				14:00 - 17:30
+				et sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Samedi&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				
+				Sur rendez-vous
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Fermé
+			&lt;/div&gt;
+			
+	
+			
+				&lt;div class=&#39;bold&#39;&gt; Dimanche&lt;/div&gt;
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Matin: 
+				
+				&lt;/span&gt;
+				
+				Fermé
+			&lt;/div&gt;
+			
+	
+			
+			
+			&lt;div class=&#39;small-font horaireAgence&#39;&gt;
+				&lt;span class=&#39;moment&#39;&gt;
+				
+					Après-midi: 
+				
+				&lt;/span&gt;
+				
+				Fermé
+			&lt;/div&gt;
+			
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+">Horaires</a>
+
+                      </p>
+                    </dd>
+
+
+
+
+
+
+                    <dt class="closed">
+		<i class="icon-large floatRight icon-plus-sign"></i>
+		ZINNEN GUIDO
+	</dt>
+                    <dd class="hide">
+                      <img class="imgAgent" src="./Foyer - Espace Client_files/2212" alt="ZINNEN GUIDO" title="ZINNEN GUIDO">
+
+                      <p class="bold">
+                        4, RUE CENTRALE<br> L-4499 LIMPACH<br>
+                      </p>
+                      <p>
+
+                        Tél : 58 38 72 <br>
+
+
+                      </p>
+                      <p>
+                        <i class="icon-envelope marginRight5"></i><a href="http://mybrecette.foyer.lu/messages/ecrire_to?to=2212">Ecrire à mon agent</a><br>
+                        <i class="icon-map-marker icon-large marginRight5"></i>
+
+                        <a target="_blank" href="http://mybrecette.foyer.lu/googleMaps/4,%20RUE%20CENTRALE%20L-4499%20LIMPACH">Plan d'accès</a>
+
+
+                      </p>
+                    </dd>
+
+
+
+
+
+
+                  </dl>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <div class="span9 pageContainer">
+
+
+              <div class="pageContent">
+                <div id="commonApproaches" class="introAccueil" intro-order-step="3" intro-clef-message="intro.accueil.step.3">
+
+
+
+
+
+                  <div class="hightLightBox ">
+                    <div class="hightlightHeader">
+
+
+                      <h3>Documents</h3>
+                    </div>
+                    <div class="hightLightContent">
+
+                      <center>
+                        <a href="http://mybrecette.foyer.lu/services/obtenir/attestation-certificat">Obtenir une attestation/un certificat</a>
+                      </center>
+
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="hightLightBox ">
+                    <div class="hightlightHeader">
+
+
+                      <h3>Sinistres</h3>
+                    </div>
+                    <div class="hightLightContent">
+
+                      <center>
+
+                        <a href="http://mybrecette.foyer.lu/demarches/sinistre/declarer/from/home">Déclarer un sinistre</a>
+
+                      </center>
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="hightLightBox ">
+                    <div class="hightlightHeader">
+
+
+                      <h3>Prestations</h3>
+                    </div>
+                    <div class="hightLightContent">
+
+                      <center>
+
+                        <a href="http://mybrecette.foyer.lu/demarches/prestation/remboursement/from/home">Demander un remboursement</a>
+
+                      </center>
+
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <div class="introAccueil" intro-order-step="4" intro-clef-message="intro.accueil.step.4">
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc auto ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Rester mobile
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-04-03-22.15.32.820203">mobilé 20368898 - AUDI - EH1542 </a></li>
+
+
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.182646">mobilé 20369124 - MAZDA - 123456 </a></li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc habitation ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Se loger et vivre sereinement
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-05-10-20.53.06.074020">reebou family 20368899 - 1930 - LUXEMBOURG						
+					    		 
+					    		
+					    		</a>
+                            </li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc sante ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Protéger sa santé
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-03-16-21.35.03.012679">medicis 61020767
+							
+								- 1 assuré(s)
+								
+
+
+	<div data-type="IconInfoTitle" data-uid="8">
+		<i class="icon-info-sign medium"></i>
+		<div class="overlay information" style="display: none">
+			
+			
+									ANTOINE NAVARRO<br>
+								
+		</div>
+	</div>
+
+							
+							
+							</a>
+                            </li>
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.183129">medicis 61020826
+							
+								- 1 assuré(s)
+								
+
+
+	<div data-type="IconInfoTitle" data-uid="9">
+		<i class="icon-info-sign medium"></i>
+		<div class="overlay information" style="display: none">
+			
+			
+									ANTOINE NAVARRO<br>
+								
+		</div>
+	</div>
+
+							
+							
+							</a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc epargne ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Epargner et protéger ses proches
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.453969">focus 5112000035
+							
+								- 1 assuré(s)
+								
+
+
+	<div data-type="IconInfoTitle" data-uid="10">
+		<i class="icon-info-sign medium"></i>
+		<div class="overlay information" style="display: none">
+			
+			
+									ANTOINE NAVARRO<br>
+								
+		</div>
+	</div>
+
+							
+							
+							</a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc retraite ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Préparer sa retraite
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.454870">horizont60 8060000977
+							
+								- 1 assuré(s)
+								
+
+
+	<div data-type="IconInfoTitle" data-uid="11">
+		<i class="icon-info-sign medium"></i>
+		<div class="overlay information" style="display: none">
+			
+			
+									ANTOINE NAVARRO<br>
+								
+		</div>
+	</div>
+
+							
+							
+							</a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                  <div class="udbbloc investissement ">
+                    <div class="arrow-picture deployUdb"></div>
+                    <div class="udb-picture"></div>
+                    <div class="udb-content">
+
+
+
+                      <div class="header ">
+
+
+
+                        <a href="http://mybrecette.foyer.lu/accueil#" class="deployUdb">Accéder à mes contrats</a>
+
+
+
+
+                        <p class="options">
+
+
+                          <span class="small-font marginRight20" style="margin-top: -10px"></span>
+
+                        </p>
+
+
+                        <h1 class="deployUdb">Investir
+
+
+                        </h1>
+
+                      </div>
+
+
+
+
+
+
+                      <div class="body content">
+
+                        <div class="udb">
+
+                          <ul>
+
+                            <li><a href="http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.456254">flexivie 8137000978
+							
+								- 1 assuré(s)
+								
+
+
+	<div data-type="IconInfoTitle" data-uid="12">
+		<i class="icon-info-sign medium"></i>
+		<div class="overlay information" style="display: none">
+			
+			
+									ANTOINE NAVARRO<br>
+								
+		</div>
+	</div>
+								
+							
+							
+							</a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </div>
+
+
+
+
+
+              <div class="servicesEtSolutions">
+                <div class="pictures introAccueil" intro-order-step="5" intro-clef-message="intro.accueil.step.5" intro-position="top">
+                  <a id="linkCrossSellingLeft" href="http://mybrecette.foyer.lu/conseils" target="_blank" href_bak="/conseils"><img alt="" id="imgCrossSellingLeft" src="./Foyer - Espace Client_files/img"></a>
+                  <a id="linkCrossSellingRight" href="http://mybrecette.foyer.lu/crossSellingRightTheLink/2017-06-28-13.53.49.477380" href_bak="/crossSellingRightTheLink/2017-06-28-13.53.49.477380"><img alt="" id="imgCrossSellingRight" src="./Foyer - Espace Client_files/2017-06-28-13.53.49.477380"></a>
+                </div>
+                <div id="crossSellingLabel" class="label">Découvrez nos services et solutions</div>
+              </div>
+
+              <script>
+                checkRedirect = function(data, f) {
+                  if (data && data.redirect)
+                    window.location.replace(data.redirect);
+                  else
+                    f();
+                }
+
+
+                window.displayCrossSellingIcons = function() {
+
+                  var routeCrossSelling = {
+                      left: {
+                        link: '/crossSellingLeftTheLink/',
+                        img: '/crossSellingLeftImg/'
+                      },
+                      right: {
+                        link: '/crossSellingRightTheLink/',
+                        img: '/crossSellingRightImg/',
+                        alt: '/crossSellingRightAlt/',
+                        questionnaire: {
+                          img: '/questionnaire/image'
+                        }
+                      }
+                    },
+                    routeDefaultCrossSelling = {
+                      left: {
+                        link: '/defaultCrossSelling/link',
+                        img: '/defaultCrossSelling/img'
+                      },
+                      right: {
+                        link: '/presentation',
+                        img: '/crossSellingMarketing'
+                      }
+                    },
+                    loadDefaultCrossSellingLeft = function() {
+                      $.ajax({
+                        type: 'GET',
+                        url: path + routeDefaultCrossSelling.left.link,
+                        success: function(data) {
+                          checkRedirect(data, function() {
+                            $("#linkCrossSellingLeft").attr("target", "_blank")
+                              .attr("href", path + data)
+                              .attr("href_bak", path + data)
+                            $("#imgCrossSellingLeft").attr("src", path + routeDefaultCrossSelling.left.img)
+                          })
+                        }
+                      })
+                    },
+                    loadDefaultCrossSellingRight = function() {
+                      $("#linkCrossSellingRight").attr("href", path + routeDefaultCrossSelling.right.link)
+                        .attr("href_bak", path + routeDefaultCrossSelling.right.link)
+                      $("#imgCrossSellingRight").attr("src", path + routeDefaultCrossSelling.right.img)
+                      $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+                    },
+                    introModal = function(numeroJeu) {
+                      var options = {
+                        autoOpen: true,
+                        modal: true,
+                        selector: '',
+                        buttons: [],
+                        width: 'auto',
+                        height: 'auto',
+                        id: 'dialog_99998',
+                        position: {
+                          my: "center",
+                          at: "top",
+                          of: window
+                        }
+                      };
+                      var m = $(_.template($("#tmpl_intro_modal_" + numeroJeu).html(), options)).appendTo(document.body)
+                      return $("#intro_modal_" + numeroJeu).dialog(options);
+                    },
+                    questionnaireModal = function(numeroJeu) {
+                      var options = {
+                        autoOpen: true,
+                        modal: true,
+                        selector: '',
+                        buttons: [],
+                        width: 'auto',
+                        height: 'auto',
+                        id: 'dialog_99999',
+                        position: {
+                          my: "center",
+                          at: "top",
+                          of: window
+                        }
+                      };
+                      var m = $(_.template($("#tmpl_questionnaire_modal_" + numeroJeu).html(), options)).appendTo(document.body)
+                      return $("#questionnaire_modal_" + numeroJeu).dialog(options);
+                    },
+                    // INTRO MODAL
+                    launchIntro = function(numeroJeu) {
+                      $.ajax({
+                        type: 'GET',
+                        url: path + '/intro/0' + numeroJeu,
+                        success: function(data) {
+                          checkRedirect(data, function() {
+                            if (data == "false") {
+                              var intro = introModal(numeroJeu),
+                                closeIntro = function() {
+                                  intro.dialog('close');
+                                  $.post(path + '/intro/0' + numeroJeu);
+                                };
+
+                              $('area.intro-close').bind("click touchstart", function(e) {
+                                closeIntro()
+                              })
+                              $('area.intro-participate').bind("click touchstart", function(e) {
+                                closeIntro()
+                                launchQuestionnaire(numeroJeu);
+                              })
+                            }
+                          })
+                        }
+                      })
+                    },
+                    // QUESTIONNAIRE MODAL
+                    launchQuestionnaire = function(numeroJeu) {
+                      var questionnaire = questionnaireModal(numeroJeu);
+
+                      //Close buttons
+                      $(".quiz-close").bind("click touchstart", function(e) {
+                        questionnaire.dialog('close');
+                        questionnaire.remove();
+                      })
+                      $(".quiz-close-and-refresh").bind("click touchstart", function(e) {
+                        questionnaire.dialog('close');
+                        questionnaire.remove();
+                        window.location.reload(false);
+                      })
+
+                      window["script_questionnaire_" + numeroJeu]()
+                    };
+
+                  ///////////////
+                  // Left icon //
+                  ///////////////
+
+                  $.ajax({
+                    type: 'GET',
+                    url: path + '/getCrossSellingLeftId',
+                    success: function(data) {
+                      checkRedirect(data, function() {
+                        if (data && data != "") {
+                          $("#linkCrossSellingLeft").removeAttr("target")
+                            .attr("href", path + routeCrossSelling.left.link + data)
+                            .attr("href_bak", path + routeCrossSelling.left.link + data)
+                          $("#imgCrossSellingLeft").attr("src", path + routeCrossSelling.left.img + data)
+                        } else {
+                          loadDefaultCrossSellingLeft();
+                        }
+                      })
+                    },
+                    error: function() {
+                      loadDefaultCrossSellingLeft();
+                    }
+                  });
+
+                  ////////////////
+                  // Right icon //
+                  ////////////////
+
+                  // Other Cross selling
+
+                  var loadCrossSellingRight = function() {
+                    $.ajax({
+                      type: 'GET',
+                      url: path + '/getCrossSellingRightId',
+                      success: function(data) {
+                        checkRedirect(data, function() {
+                          if (data && data != "") {
+                            $("#linkCrossSellingRight").removeAttr("target")
+                              .attr("href", path + routeCrossSelling.right.link + data)
+                              .attr("href_bak", path + routeCrossSelling.right.link + data)
+                            $("#imgCrossSellingRight").attr("src", path + routeCrossSelling.right.img + data)
+                            // Display right icon message
+                            $.get(path + routeCrossSelling.right.alt + data, function(txtRightIcon) {
+                              if (txtRightIcon != "")
+                                $("#crossSellingLabel").html(txtRightIcon)
+                              else
+                                $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+                            });
+                          } else {
+                            loadDefaultCrossSellingRight();
+                          }
+                        })
+                      },
+                      error: function() {
+                        loadDefaultCrossSellingRight();
+                      }
+                    });
+                  };
+
+                  // Questionnaire
+
+                  $.ajax({
+                    type: 'GET',
+                    url: path + '/questionnaire/check',
+                    success: function(data) {
+                      if (data && data.length && data.length != 0) {
+                        var numeroJeu = data[0],
+                          txtRightIcon = data[1];
+
+                        $("#imgCrossSellingRight").attr("src", path + routeCrossSelling.right.questionnaire.img)
+                        // Display right icon message
+                        if (txtRightIcon != "")
+                          $("#crossSellingLabel").html(txtRightIcon)
+                        else
+                          $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+
+                        /////////////////////////
+                        // QUESTIONNAIRE MODAL //
+                        /////////////////////////
+
+                        $("#linkCrossSellingRight").bind("click touchstart", function(e) {
+                          launchQuestionnaire(numeroJeu);
+                        });
+
+                        /////////////////
+                        // INTRO MODAL //
+                        /////////////////
+                        launchIntro(numeroJeu);
+
+                      } else {
+                        loadCrossSellingRight();
+                      }
+                    },
+                    error: function() {
+                      loadCrossSellingRight();
+                    }
+                  });
+
+
+                }
+
+                $(document).ready(function() {
+
+                  displayCrossSellingIcons();
+
+                })
+
+              </script>
+
+
+
+              <!-- ------------ -->
+              <!-- Intro  modal -->
+              <!-- ------------ -->
+
+              <script type="text/html" id="tmpl_intro_modal_1">
+                <div id="intro_modal_1" title="title" data-type="Modal" data-selector="">
+                  <img class="imageModal" src='/public/images/questionnaires/quiz1.fr.png' usemap="#quizIntroMap_1" />
+                </div>
+              </script>
+              <map name="quizIntroMap_1" class="hide"><!-- Let it here to work with Safari 5 too -->
+   <area shape="circle" href="http://mybrecette.foyer.lu/accueil#" coords="646,288,65" class="intro-participate">
+   <area shape="circle" href="http://mybrecette.foyer.lu/accueil#" coords="822,61,15" class="intro-close">
+</map>
+
+              <!-- ---- -->
+              <!-- quiz -->
+              <!-- ---- -->
+
+              <script type="text/html" charset="utf-8" id="tmpl_questionnaire_modal_1">
+                <div id="questionnaire_modal_1">
+                  <div>
+                    <div class="container">
+                      <div class="quiz-banner-1">
+                        <img src='/public/images/questionnaires/quiz1.banner.fr.jpg' />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz-wrapper-content">
+                    <div class="quiz-OK hide">
+
+
+
+
+
+                      <div class="row marginBottom10 success marginLeft0" class="marginBottom10 success marginLeft0">
+
+
+
+
+
+                        <div class="column-size-1-6
+				
+				bigCheck column">
+
+                          &nbsp;
+
+                        </div>
+
+
+
+
+
+
+                        <div class="column-size-5-6
+				
+				bigcheck-content column">
+
+
+
+                        </div>
+
+
+
+                      </div>
+
+
+                      <div class="buttons floatRight">
+                        <input type="submit" class="button action quiz-close-and-refresh" value='Fermer'></input>
+                      </div>
+                    </div>
+                    <div class="quiz-KO hide">
+
+
+                      <div class="">
+                        <div class="warning">
+                          <i class="icon-warning-sign"></i>
+                          <span></span>
+
+                        </div>
+                      </div>
+
+                      <div class="floatRight">
+                        <input type="submit" class="button action quiz-close-and-refresh" value='Fermer'></input>
+                      </div>
+                    </div>
+
+                    <div class="quiz">
+                      <div class="marginBottom10 marginTop10">
+                        Répondez aux 3 questions ci-dessous pour participer.
+                      </div>
+
+
+
+
+
+                      <form action="/questionnaire" method="POST" accept-charset="utf-8" enctype="multipart/form-data" data-type="Form" id="quizForm">
+                        <input type="hidden" name="csrfToken" value="" />
+
+                        <input type="hidden" name="quizNumber" value="1" />
+                        <ol class="ordered questionnaire">
+                          <li>
+                            <label>Quelle nouvelle fonction est disponible depuis début octobre dans votre espace client?</label>
+
+
+
+                            <dl class='field   noDt vertical' data-type="Radios">
+                              <dt><label></label></dt>
+                              <dd>
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_1" 
+				value="A" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		Télécharger un certificat d&#x27;impôt
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_1" 
+				value="B" 
+				
+				
+
+  class="ok quiz-radio"
+ />
+		Payer ses factures en ligne
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_1" 
+				value="C" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		Modifier ses données personnelles
+		
+	</label>
+
+
+                              </dd>
+                            </dl>
+
+
+
+                            <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> Vous pouvez désormais payer vos factures en ligne dans votre espace client avec votre carte visa ou mastercard.</div>
+                          </li>
+                          <li>
+                            <label>En combien d&#x27;étapes pouvez-vous mettre en place un paiement mensuel?</label>
+
+
+
+                            <dl class='field   noDt vertical' data-type="Radios">
+                              <dt><label></label></dt>
+                              <dd>
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_2" 
+				value="A" 
+				
+				
+
+  class="ok quiz-radio"
+ />
+		3
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_2" 
+				value="B" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		5
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_2" 
+				value="C" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		7
+		
+	</label>
+
+
+                              </dd>
+                            </dl>
+
+
+
+                            <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> En 3 clics vous pouvez mettre en place le paiement mensuel de vos factures dans la rubrique « Mes démarches », c&#x27;est simple et entièrement gratuit.</div>
+                          </li>
+                          <li>
+                            <label>Avec quel partenaire, Foyer a-t-il développé le coffre-fort virtuel?</label>
+
+
+
+                            <dl class='field   noDt vertical' data-type="Radios">
+                              <dt><label></label></dt>
+                              <dd>
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_3" 
+				value="A" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		Abracadabra
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_3" 
+				value="B" 
+				
+				
+
+  class="ok quiz-radio"
+ />
+		SeeZam
+		
+	</label>
+
+
+
+
+                                <label class="tiny-label">
+		<input 	type="radio" 
+				name="question_3" 
+				value="C" 
+				
+				
+
+  class="ko quiz-radio"
+ />
+		Motus
+		
+	</label>
+
+
+                              </dd>
+                            </dl>
+
+
+
+                            <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> Le coffre-fort virtuel a été développé en collaboration avec Seezam, qui garantit une sécurité optimale des données enregistrées dans votre coffre-fort.</div>
+                          </li>
+                        </ol>
+
+                        <div class="floatLeft">
+
+
+
+                          <dl class="field  noDt" data-type="Checkboxes" data-initial-value="">
+                            <dt><label></label></dt>
+                            <dd>
+
+
+                              <label class="tiny-label">
+		<input 	type="checkbox" 
+				name="quizReglementAccepted" 
+				value="Y"
+			 
+				
+ />
+		
+		
+                        J&#x27;ai lu et accepté le <a href="http://www.foyer.lu/fr/basedoc_file/id/9487" target="_blank">règlement du concours</a> 
+                      
+	</label>
+
+                            </dd>
+                          </dl>
+
+                        </div>
+
+                        <div class="quiz-buttons floatRight ">
+                          <input type="button" class="button action marginRight10 quiz-close" value='Fermer'></input>
+                          <input type="submit" class="button action new nextStep quiz-send" value='Envoyer' disabled="disabled">
+                        </div>
+
+                      </form>
+
+
+                    </div>
+                  </div>
+                </div>
+              </script>
+
+              <script>
+                $(document).ready(function() {
+                  window.script_questionnaire_1 = function() {
+
+                    // Display good responses : we force it, so we can let it visible in javascript
+                    var routeOK = path + '/public/images/general/check.png',
+                      routeKO = path + '/public/images/general/delete.png',
+                      $imgOK = $("<img src='" + routeOK + "' class='quiz-response-img ok'></img>"),
+                      $imgKO = $("<img src='" + routeKO + "' class='quiz-response-img ko'></img>"),
+                      removeAllIcons = function(radio) {
+                        radio.closest("li").find(".quiz-response-img").remove()
+                      },
+                      responseMessage = function(radio) {
+                        return radio.closest("li").find(".quiz-response-div");
+                      },
+                      displayResponse = function(radio) {
+                        if (radio.hasClass("ok")) {
+                          removeAllIcons(radio);
+                          radio.before($imgOK.clone());
+                          responseMessage(radio).show("slow")
+                        } else {
+                          removeAllIcons(radio);
+                          radio.before($imgKO.clone());
+                          responseMessage(radio).hide("fast")
+                        }
+                      },
+                      checkAllResponseOk = function() {
+                        var allResponseOk = true,
+                          $checkedRadios = $("input[type='radio'].quiz-radio:checked"),
+                          nbQuestions = $(".questionnaire li").length;
+                        // Check all responses
+                        $.each($checkedRadios, function(i, elt) {
+                          allResponseOk = allResponseOk && $(elt).hasClass("ok")
+                        })
+                        // Check CGU accepted
+                        allResponseOk = allResponseOk && $("input[type='checkbox'][name='quizReglementAccepted']:checked").length
+
+                        if ($checkedRadios.length == nbQuestions && allResponseOk)
+                          $(".quiz-send").removeAttr("disabled")
+                        else
+                          $(".quiz-send").attr("disabled", "disabled")
+                      };
+
+                    // Radio buttons
+                    $(".quiz-radio").change(function(e) {
+                      var that = this;
+                      displayResponse($(that));
+                      checkAllResponseOk();
+                    })
+
+                    // Checkbox cgu
+                    $("input[type='checkbox'][name='quizReglementAccepted']").change(function(e) {
+                      checkAllResponseOk();
+                    })
+
+                    // Send button
+                    $(".quiz-send").bind("click touchstart", function(e) {
+                      var formData = _.filter($('#quizForm').serializeArray(), function(elt) {
+                          return elt.name != "csrfToken"
+                        }),
+                        $buttonsContainer = $(".quiz-buttons"),
+                        displayError = function(errorTxt) {
+                          $(".quiz").remove();
+                          $(".quiz-KO .warning span").html(errorTxt)
+                          $(".quiz-KO").show()
+                        },
+                        displaySuccess = function() {
+                          $(".quiz").remove();
+                          $(".quiz-OK .bigcheck-content").html(i18n("questionnaire.envoi.OK"));
+                          $(".quiz-OK").show();
+                        };
+
+                      e.preventDefault();
+                      $buttonsContainer.hide();
+                      $(".quiz").append("<img src='/public/images/general/ajaxloader_small.gif' class='quiz-loading floatRight'/>");
+
+                      $.ajax({
+                        type: 'POST',
+                        url: path + '/questionnaire',
+                        data: formData,
+                        success: function(data, textStatus, jqXHR) {
+                          (data && data.length && data.length != 0) ? displayError(i18n(data)): displaySuccess();
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                          displayError(i18n(jqXHR.responseText));
+                        }
+                      });
+                    })
+                  }
+                })
+
+              </script>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="wrapper-footer"></div>
+    <div class="container">
+      <div id="footer-push" class="row">
+        <div class="span12"></div>
+      </div>
+      <div class="row">
+
+
+        <div id="footer">
+          <div class="span12">
+            <p>
+
+
+
+
+              <a href="http://mybrecette.foyer.lu/donnees/acces/cgu">
+			Conditions Générales d'utilisation
+			
+		</a> -
+              <a href="http://mybrecette.foyer.lu/aide-en-ligne">Aide en ligne</a> -
+              <a href="http://mybrecette.foyer.lu/messages/ecrire/depuis/CONTACT">Contact</a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

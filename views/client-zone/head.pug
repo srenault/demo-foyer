@@ -1,0 +1,40 @@
+meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+meta(name='viewport', content='width=device-width, initial-scale=1.0')
+link(rel='shortcut icon', type='image/png', href='http://mybrecette.foyer.lu/public/images/favicon.png')
+link(rel='stylesheet', href='/Foyer - Espace Client_files/global.css', type='text/css', charset='utf-8')
+link(rel='stylesheet', href='/Foyer - Espace Client_files/udbBoxes.css', type='text/css', charset='utf-8')
+script#MFBActor(type='text/javascript', charset='UTF-8', async='', src='/Foyer - Espace Client_files/action')
+script(type='text/javascript', charset='utf-8').
+  var path = '/';
+  path = path.substr(0, path.length - 1);
+script(src='/Foyer - Espace Client_files/global.js.download', type='text/javascript', charset='utf-8')
+script#_tmpl_modal(type='text/html', charset='utf-8').
+  <div id="<%=id%>" title="<%=title%>" data-type="Modal" data-selector="<%=selector%>">
+  <%=content%>
+  </div>
+script#_tmpl_pager-case(type='text/html', charset='utf-8').
+  <a href="" <% if(active){ %>class="active" <% } %>data-page="<%= i %>"><%= i %></a>
+script#_tmpl_pager-more(type='text/html', charset='utf-8').
+  <span class='more'> </span>
+//if IE 8
+  script(src='/public/javascripts/libs/json3.min.js', type='text/javascript', charset='utf-8')
+script(src='/Foyer - Espace Client_files/udb.js.download', type='text/javascript', charset='utf-8')
+script(src='/Foyer - Espace Client_files/i18n-fr.js.download')
+// IE Fix for HTML5 Tags
+script(src='/Foyer - Espace Client_files/html5.js.download', type='text/javascript', charset='utf-8')
+script(src='/Foyer - Espace Client_files/jquery.cookie.js.download', type='text/javascript', charset='utf-8')
+script(type='text/javascript', charset='utf-8').
+  jQuery(function($) {
+  $("[pilotedisabled], [pilotedisabled] a, a[pilotedisabled]").attr("disabled", "disabled")
+  .css("cursor", "not-allowed")
+  .css("color", "lightGrey")
+  .css("border-bottom", "none")
+  .attr("title", "Cette fonctionnalité n'est pas disponible")
+  .unbind("click")
+  .click(function(e) {
+  e.preventDefault
+  e.stopPropagation
+  return false
+  })
+  .children("i").css("color", "lightGrey")
+  });

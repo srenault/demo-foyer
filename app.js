@@ -102,6 +102,19 @@ app.get(I18NUrl('/page/:uid'), (req, res, next) => {
   });
 });
 
+// Route for client zone
+app.get(I18NUrl('/client-zone'), (req, res, next) => {
+  
+  req.prismic.api.getSingle("banner", I18NConfig(req))
+  .then((banner) => {
+    if(!banner) res.status(404).send('banner not found');
+    else res.render('client-zone', { banner });
+  })
+  .catch((error) => {
+    next(`error when retriving page ${error.message}`);
+  });
+});
+
 
 //preview
 app.get('/preview', (req, res) => {

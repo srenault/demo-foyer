@@ -1,0 +1,65 @@
+#siteContent {
+  min-height: 730px;
+  position: relative;
+}
+
+.client-banner {
+  width: 1020px;
+  height: 160px;
+  background: steelblue;
+  position: relative;
+  top: 555px;
+  left: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.client-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 160px;
+  width: 450px;
+  background: rgba(0,0,0,0.6);
+}
+
+.client-banner-text {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+#siteContent .client-banner-text p {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "DIN-Regular", "FontAwesome","Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00c3ff;
+}
+
+#siteContent .client-banner-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white !important;
+  font-family: "Raleway-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 17px;
+  padding: 10px 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  background: #00c3ff;
+  border-color: #00c3ff;
+  border: none !important;
+}
+
+#target-select {
+  position: absolute;
+  top: -90px;
+  left: 20px;
+  width: 190px;
+}

@@ -1,0 +1,932 @@
+.span12.breadcrumbContainer
+  .row
+    // Nav Sidebar
+    #quicknav-bar.span3
+      #boxAlertes.bloc
+        .header
+          i.icon-exclamation-sign
+          p.options
+          h1
+            | Alerte(s)
+        .body.content
+          .menuLink
+            div
+              a(href='http://mybrecette.foyer.lu/messages/recus/from/alertes')
+                | Nouveaux messages (10)
+      .introAccueil(intro-order-step='7', intro-clef-message='intro.accueil.step.7', intro-position='right')
+        script.
+          $(document).ready(function() {
+          $(".horaireAgentLink").click(function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $horaireContainer = $(this).closest("p").siblings(".horaireAgentContainer");
+          $horaireContainer.toggle("fast")
+          });
+          });
+        #boxAgent.bloc(data-type='BoxAccordion', data-uid='7')
+          .header
+            p.options
+            h1 Contacter mes agents
+          dl.list
+            dt
+              i.icon-large.floatRight.icon-minus-sign
+              | 		ALPHA
+            dd(style='display: block;')
+              img.imgAgent(src='/Foyer - Espace Client_files/10', alt='ALPHA', title='ALPHA')
+              p.bold
+                | 129, RUE DE MERL
+                br
+                |  L-2146 LUXEMBOURG
+                br
+              p
+                | Tél : 44 17 63 
+                br
+              p
+                i.icon-envelope.marginRight5
+                a(href='http://mybrecette.foyer.lu/messages/ecrire_to?to=10') Ecrire à mon agent
+                br
+                i.icon-map-marker.icon-large.marginRight5
+                a(target='_blank', href='http://mybrecette.foyer.lu/googleMaps/129,%20RUE%20DE%20MERL%20L-2146%20LUXEMBOURG') Plan d'accès
+                |  - 
+                a.horaireAgent(href='http://mybrecette.foyer.lu/accueil#', title='ALPHA', message="\
+                <div class='bold'> Lundi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                12:00 - 18:30\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Mardi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                12:00 - 18:30\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Mercredi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                12:00 - 18:30\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Jeudi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                12:00 - 20:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Vendredi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                12:00 - 18:30\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Samedi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                14:00 - 17:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Dimanche</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                Fermé\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Fermé\
+                </div>\
+                ") Horaires
+            dt.closed
+              i.icon-large.floatRight.icon-plus-sign
+              | 		ALVES CARLOS
+            dd.hide
+              img.imgAgent(src='/Foyer - Espace Client_files/1175', alt='ALVES CARLOS', title='ALVES CARLOS')
+              p.bold
+                | 2, RUE DES ARTISANS
+                br
+                |  L-3712 RUMELANGE
+                br
+              p
+                | Tél : 27 99 11 01 
+                br
+                |  Gsm : 661 777 899
+                br
+              p
+                i.icon-envelope.marginRight5
+                a(href='http://mybrecette.foyer.lu/messages/ecrire_to?to=1175') Ecrire à mon agent
+                br
+                i.icon-map-marker.icon-large.marginRight5
+                a(target='_blank', href='http://mybrecette.foyer.lu/googleMaps/49.4605401,6.031335') Plan d'accès
+                |  - 
+                a.horaireAgent(href='http://mybrecette.foyer.lu/accueil#', title='ALVES CARLOS', message="\
+                <div class='bold'> Lundi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='bold'> Mardi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='bold'> Mercredi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='bold'> Jeudi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                08:30 - 12:00\
+                et sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='bold'> Vendredi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                14:00 - 17:30\
+                et sur rendez-vous\
+                </div>\
+                <div class='bold'> Samedi</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                Sur rendez-vous\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Fermé\
+                </div>\
+                <div class='bold'> Dimanche</div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Matin: \
+                </span>\
+                Fermé\
+                </div>\
+                <div class='small-font horaireAgence'>\
+                <span class='moment'>\
+                Après-midi: \
+                </span>\
+                Fermé\
+                </div>\
+                ") Horaires
+            dt.closed
+              i.icon-large.floatRight.icon-plus-sign
+              | 		ZINNEN GUIDO
+            dd.hide
+              img.imgAgent(src='/Foyer - Espace Client_files/2212', alt='ZINNEN GUIDO', title='ZINNEN GUIDO')
+              p.bold
+                | 4, RUE CENTRALE
+                br
+                |  L-4499 LIMPACH
+                br
+              p
+                | Tél : 58 38 72 
+                br
+              p
+                i.icon-envelope.marginRight5
+                a(href='http://mybrecette.foyer.lu/messages/ecrire_to?to=2212') Ecrire à mon agent
+                br
+                i.icon-map-marker.icon-large.marginRight5
+                a(target='_blank', href='http://mybrecette.foyer.lu/googleMaps/4,%20RUE%20CENTRALE%20L-4499%20LIMPACH') Plan d'accès
+    .span9.pageContainer
+      .pageContent
+        #commonApproaches.introAccueil(intro-order-step='3', intro-clef-message='intro.accueil.step.3')
+          .hightLightBox
+            .hightlightHeader
+              h3 Documents
+            .hightLightContent
+              center
+                a(href='http://mybrecette.foyer.lu/services/obtenir/attestation-certificat') Obtenir une attestation/un certificat
+          .hightLightBox
+            .hightlightHeader
+              h3 Sinistres
+            .hightLightContent
+              center
+                a(href='http://mybrecette.foyer.lu/demarches/sinistre/declarer/from/home') Déclarer un sinistre
+          .hightLightBox
+            .hightlightHeader
+              h3 Prestations
+            .hightLightContent
+              center
+                a(href='http://mybrecette.foyer.lu/demarches/prestation/remboursement/from/home') Demander un remboursement
+        .introAccueil(intro-order-step='4', intro-clef-message='intro.accueil.step.4')
+          .udbbloc.auto
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Rester mobile
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-04-03-22.15.32.820203') mobilé 20368898 - AUDI - EH1542 
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.182646') mobilé 20369124 - MAZDA - 123456 
+          .udbbloc.habitation
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Se loger et vivre sereinement
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-05-10-20.53.06.074020')
+                        | reebou family 20368899 - 1930 - LUXEMBOURG
+          .udbbloc.sante
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Protéger sa santé
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-03-16-21.35.03.012679')
+                        | medicis 61020767
+                        | - 1 assuré(s)
+                        div(data-type='IconInfoTitle', data-uid='8')
+                          i.icon-info-sign.medium
+                          .overlay.information(style='display: none')
+                            | ANTOINE NAVARRO
+                            br
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.183129')
+                        | medicis 61020826
+                        | - 1 assuré(s)
+                        div(data-type='IconInfoTitle', data-uid='9')
+                          i.icon-info-sign.medium
+                          .overlay.information(style='display: none')
+                            | ANTOINE NAVARRO
+                            br
+          .udbbloc.epargne
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Epargner et protéger ses proches
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.453969')
+                        | focus 5112000035
+                        | - 1 assuré(s)
+                        div(data-type='IconInfoTitle', data-uid='10')
+                          i.icon-info-sign.medium
+                          .overlay.information(style='display: none')
+                            | ANTOINE NAVARRO
+                            br
+          .udbbloc.retraite
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Préparer sa retraite
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.454870')
+                        | horizont60 8060000977
+                        | - 1 assuré(s)
+                        div(data-type='IconInfoTitle', data-uid='11')
+                          i.icon-info-sign.medium
+                          .overlay.information(style='display: none')
+                            | ANTOINE NAVARRO
+                            br
+          .udbbloc.investissement
+            .arrow-picture.deployUdb
+            .udb-picture
+            .udb-content
+              .header
+                a.deployUdb(href='http://mybrecette.foyer.lu/accueil#') Accéder à mes contrats
+                p.options
+                  span.small-font.marginRight20(style='margin-top: -10px')
+                h1.deployUdb
+                  | Investir
+              .body.content
+                .udb
+                  ul
+                    li
+                      a(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.456254')
+                        | flexivie 8137000978
+                        | - 1 assuré(s)
+                        div(data-type='IconInfoTitle', data-uid='12')
+                          i.icon-info-sign.medium
+                          .overlay.information(style='display: none')
+                            | ANTOINE NAVARRO
+                            br
+      //.servicesEtSolutions
+        .pictures.introAccueil(intro-order-step='5', intro-clef-message='intro.accueil.step.5', intro-position='top')
+          a#linkCrossSellingLeft(href='http://mybrecette.foyer.lu/conseils', target='_blank', href_bak='/conseils')
+            img#imgCrossSellingLeft(alt='', src='/Foyer - Espace Client_files/img')
+          a#linkCrossSellingRight(href='http://mybrecette.foyer.lu/crossSellingRightTheLink/2017-06-28-13.53.49.477380', href_bak='/crossSellingRightTheLink/2017-06-28-13.53.49.477380')
+            img#imgCrossSellingRight(alt='', src='/Foyer - Espace Client_files/2017-06-28-13.53.49.477380')
+        #crossSellingLabel.label Découvrez nos services et solutions
+      script.
+        checkRedirect = function(data, f) {
+        if (data && data.redirect)
+        window.location.replace(data.redirect);
+        else
+        f();
+        }
+        window.displayCrossSellingIcons = function() {
+        var routeCrossSelling = {
+        left: {
+        link: '/crossSellingLeftTheLink/',
+        img: '/crossSellingLeftImg/'
+        },
+        right: {
+        link: '/crossSellingRightTheLink/',
+        img: '/crossSellingRightImg/',
+        alt: '/crossSellingRightAlt/',
+        questionnaire: {
+        img: '/questionnaire/image'
+        }
+        }
+        },
+        routeDefaultCrossSelling = {
+        left: {
+        link: '/defaultCrossSelling/link',
+        img: '/defaultCrossSelling/img'
+        },
+        right: {
+        link: '/presentation',
+        img: '/crossSellingMarketing'
+        }
+        },
+        loadDefaultCrossSellingLeft = function() {
+        $.ajax({
+        type: 'GET',
+        url: path + routeDefaultCrossSelling.left.link,
+        success: function(data) {
+        checkRedirect(data, function() {
+        $("#linkCrossSellingLeft").attr("target", "_blank")
+        .attr("href", path + data)
+        .attr("href_bak", path + data)
+        $("#imgCrossSellingLeft").attr("src", path + routeDefaultCrossSelling.left.img)
+        })
+        }
+        })
+        },
+        loadDefaultCrossSellingRight = function() {
+        $("#linkCrossSellingRight").attr("href", path + routeDefaultCrossSelling.right.link)
+        .attr("href_bak", path + routeDefaultCrossSelling.right.link)
+        $("#imgCrossSellingRight").attr("src", path + routeDefaultCrossSelling.right.img)
+        $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+        },
+        introModal = function(numeroJeu) {
+        var options = {
+        autoOpen: true,
+        modal: true,
+        selector: '',
+        buttons: [],
+        width: 'auto',
+        height: 'auto',
+        id: 'dialog_99998',
+        position: {
+        my: "center",
+        at: "top",
+        of: window
+        }
+        };
+        var m = $(_.template($("#tmpl_intro_modal_" + numeroJeu).html(), options)).appendTo(document.body)
+        return $("#intro_modal_" + numeroJeu).dialog(options);
+        },
+        questionnaireModal = function(numeroJeu) {
+        var options = {
+        autoOpen: true,
+        modal: true,
+        selector: '',
+        buttons: [],
+        width: 'auto',
+        height: 'auto',
+        id: 'dialog_99999',
+        position: {
+        my: "center",
+        at: "top",
+        of: window
+        }
+        };
+        var m = $(_.template($("#tmpl_questionnaire_modal_" + numeroJeu).html(), options)).appendTo(document.body)
+        return $("#questionnaire_modal_" + numeroJeu).dialog(options);
+        },
+        // INTRO MODAL
+        launchIntro = function(numeroJeu) {
+        $.ajax({
+        type: 'GET',
+        url: path + '/intro/0' + numeroJeu,
+        success: function(data) {
+        checkRedirect(data, function() {
+        if (data == "false") {
+        var intro = introModal(numeroJeu),
+        closeIntro = function() {
+        intro.dialog('close');
+        $.post(path + '/intro/0' + numeroJeu);
+        };
+        $('area.intro-close').bind("click touchstart", function(e) {
+        closeIntro()
+        })
+        $('area.intro-participate').bind("click touchstart", function(e) {
+        closeIntro()
+        launchQuestionnaire(numeroJeu);
+        })
+        }
+        })
+        }
+        })
+        },
+        // QUESTIONNAIRE MODAL
+        launchQuestionnaire = function(numeroJeu) {
+        var questionnaire = questionnaireModal(numeroJeu);
+        //Close buttons
+        $(".quiz-close").bind("click touchstart", function(e) {
+        questionnaire.dialog('close');
+        questionnaire.remove();
+        })
+        $(".quiz-close-and-refresh").bind("click touchstart", function(e) {
+        questionnaire.dialog('close');
+        questionnaire.remove();
+        window.location.reload(false);
+        })
+        window["script_questionnaire_" + numeroJeu]()
+        };
+        ///////////////
+        // Left icon //
+        ///////////////
+        $.ajax({
+        type: 'GET',
+        url: path + '/getCrossSellingLeftId',
+        success: function(data) {
+        checkRedirect(data, function() {
+        if (data && data != "") {
+        $("#linkCrossSellingLeft").removeAttr("target")
+        .attr("href", path + routeCrossSelling.left.link + data)
+        .attr("href_bak", path + routeCrossSelling.left.link + data)
+        $("#imgCrossSellingLeft").attr("src", path + routeCrossSelling.left.img + data)
+        } else {
+        loadDefaultCrossSellingLeft();
+        }
+        })
+        },
+        error: function() {
+        loadDefaultCrossSellingLeft();
+        }
+        });
+        ////////////////
+        // Right icon //
+        ////////////////
+        // Other Cross selling
+        var loadCrossSellingRight = function() {
+        $.ajax({
+        type: 'GET',
+        url: path + '/getCrossSellingRightId',
+        success: function(data) {
+        checkRedirect(data, function() {
+        if (data && data != "") {
+        $("#linkCrossSellingRight").removeAttr("target")
+        .attr("href", path + routeCrossSelling.right.link + data)
+        .attr("href_bak", path + routeCrossSelling.right.link + data)
+        $("#imgCrossSellingRight").attr("src", path + routeCrossSelling.right.img + data)
+        // Display right icon message
+        $.get(path + routeCrossSelling.right.alt + data, function(txtRightIcon) {
+        if (txtRightIcon != "")
+        $("#crossSellingLabel").html(txtRightIcon)
+        else
+        $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+        });
+        } else {
+        loadDefaultCrossSellingRight();
+        }
+        })
+        },
+        error: function() {
+        loadDefaultCrossSellingRight();
+        }
+        });
+        };
+        // Questionnaire
+        $.ajax({
+        type: 'GET',
+        url: path + '/questionnaire/check',
+        success: function(data) {
+        if (data && data.length && data.length != 0) {
+        var numeroJeu = data[0],
+        txtRightIcon = data[1];
+        $("#imgCrossSellingRight").attr("src", path + routeCrossSelling.right.questionnaire.img)
+        // Display right icon message
+        if (txtRightIcon != "")
+        $("#crossSellingLabel").html(txtRightIcon)
+        else
+        $("#crossSellingLabel").html(i18n("decouvrez.nos.services.solutions"))
+        /////////////////////////
+        // QUESTIONNAIRE MODAL //
+        /////////////////////////
+        $("#linkCrossSellingRight").bind("click touchstart", function(e) {
+        launchQuestionnaire(numeroJeu);
+        });
+        /////////////////
+        // INTRO MODAL //
+        /////////////////
+        launchIntro(numeroJeu);
+        } else {
+        loadCrossSellingRight();
+        }
+        },
+        error: function() {
+        loadCrossSellingRight();
+        }
+        });
+        }
+        $(document).ready(function() {
+        displayCrossSellingIcons();
+        })
+      // ------------
+      // Intro  modal
+      // ------------
+      script#tmpl_intro_modal_1(type='text/html').
+        <div id="intro_modal_1" title="title" data-type="Modal" data-selector="">
+        <img class="imageModal" src='/public/images/questionnaires/quiz1.fr.png' usemap="#quizIntroMap_1" />
+        </div>
+      map.hide(name='quizIntroMap_1')
+        // Let it here to work with Safari 5 too
+        area.intro-participate(shape='circle', href='http://mybrecette.foyer.lu/accueil#', coords='646,288,65')
+        area.intro-close(shape='circle', href='http://mybrecette.foyer.lu/accueil#', coords='822,61,15')
+      // ----
+      // quiz
+      // ----
+      script#tmpl_questionnaire_modal_1(type='text/html', charset='utf-8').
+        <div id="questionnaire_modal_1">
+        <div>
+        <div class="container">
+        <div class="quiz-banner-1">
+        <img src='/public/images/questionnaires/quiz1.banner.fr.jpg' />
+        </div>
+        </div>
+        </div>
+        <div class="quiz-wrapper-content">
+        <div class="quiz-OK hide">
+        <div class="row marginBottom10 success marginLeft0" class="marginBottom10 success marginLeft0">
+        <div class="column-size-1-6
+        bigCheck column">
+        &nbsp;
+        </div>
+        <div class="column-size-5-6
+        bigcheck-content column">
+        </div>
+        </div>
+        <div class="buttons floatRight">
+        <input type="submit" class="button action quiz-close-and-refresh" value='Fermer'></input>
+        </div>
+        </div>
+        <div class="quiz-KO hide">
+        <div class="">
+        <div class="warning">
+        <i class="icon-warning-sign"></i>
+        <span></span>
+        </div>
+        </div>
+        <div class="floatRight">
+        <input type="submit" class="button action quiz-close-and-refresh" value='Fermer'></input>
+        </div>
+        </div>
+        <div class="quiz">
+        <div class="marginBottom10 marginTop10">
+        Répondez aux 3 questions ci-dessous pour participer.
+        </div>
+        <form action="/questionnaire" method="POST" accept-charset="utf-8" enctype="multipart/form-data" data-type="Form" id="quizForm">
+        <input type="hidden" name="csrfToken" value="" />
+        <input type="hidden" name="quizNumber" value="1" />
+        <ol class="ordered questionnaire">
+        <li>
+        <label>Quelle nouvelle fonction est disponible depuis début octobre dans votre espace client?</label>
+        <dl class='field   noDt vertical' data-type="Radios">
+        <dt><label></label></dt>
+        <dd>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_1"
+        value="A"
+        class="ko quiz-radio"
+        />
+        Télécharger un certificat d&#x27;impôt
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_1"
+        value="B"
+        class="ok quiz-radio"
+        />
+        Payer ses factures en ligne
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_1"
+        value="C"
+        class="ko quiz-radio"
+        />
+        Modifier ses données personnelles
+        </label>
+        </dd>
+        </dl>
+        <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> Vous pouvez désormais payer vos factures en ligne dans votre espace client avec votre carte visa ou mastercard.</div>
+        </li>
+        <li>
+        <label>En combien d&#x27;étapes pouvez-vous mettre en place un paiement mensuel?</label>
+        <dl class='field   noDt vertical' data-type="Radios">
+        <dt><label></label></dt>
+        <dd>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_2"
+        value="A"
+        class="ok quiz-radio"
+        />
+        3
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_2"
+        value="B"
+        class="ko quiz-radio"
+        />
+        5
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_2"
+        value="C"
+        class="ko quiz-radio"
+        />
+        7
+        </label>
+        </dd>
+        </dl>
+        <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> En 3 clics vous pouvez mettre en place le paiement mensuel de vos factures dans la rubrique « Mes démarches », c&#x27;est simple et entièrement gratuit.</div>
+        </li>
+        <li>
+        <label>Avec quel partenaire, Foyer a-t-il développé le coffre-fort virtuel?</label>
+        <dl class='field   noDt vertical' data-type="Radios">
+        <dt><label></label></dt>
+        <dd>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_3"
+        value="A"
+        class="ko quiz-radio"
+        />
+        Abracadabra
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_3"
+        value="B"
+        class="ok quiz-radio"
+        />
+        SeeZam
+        </label>
+        <label class="tiny-label">
+        <input 	type="radio"
+        name="question_3"
+        value="C"
+        class="ko quiz-radio"
+        />
+        Motus
+        </label>
+        </dd>
+        </dl>
+        <div class="quiz-response-div information hide"><img src='/public/images/general/check.png'></img> Le coffre-fort virtuel a été développé en collaboration avec Seezam, qui garantit une sécurité optimale des données enregistrées dans votre coffre-fort.</div>
+        </li>
+        </ol>
+        <div class="floatLeft">
+        <dl class="field  noDt" data-type="Checkboxes" data-initial-value="">
+        <dt><label></label></dt>
+        <dd>
+        <label class="tiny-label">
+        <input 	type="checkbox"
+        name="quizReglementAccepted"
+        value="Y"
+        />
+        J&#x27;ai lu et accepté le <a href="http://www.foyer.lu/fr/basedoc_file/id/9487" target="_blank">règlement du concours</a>
+        </label>
+        </dd>
+        </dl>
+        </div>
+        <div class="quiz-buttons floatRight ">
+        <input type="button" class="button action marginRight10 quiz-close" value='Fermer'></input>
+        <input type="submit" class="button action new nextStep quiz-send" value='Envoyer' disabled="disabled">
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+      script.
+        $(document).ready(function() {
+        window.script_questionnaire_1 = function() {
+        // Display good responses : we force it, so we can let it visible in javascript
+        var routeOK = path + '/public/images/general/check.png',
+        routeKO = path + '/public/images/general/delete.png',
+        $imgOK = $("<img src='" + routeOK + "' class='quiz-response-img ok'></img>"),
+        $imgKO = $("<img src='" + routeKO + "' class='quiz-response-img ko'></img>"),
+        removeAllIcons = function(radio) {
+        radio.closest("li").find(".quiz-response-img").remove()
+        },
+        responseMessage = function(radio) {
+        return radio.closest("li").find(".quiz-response-div");
+        },
+        displayResponse = function(radio) {
+        if (radio.hasClass("ok")) {
+        removeAllIcons(radio);
+        radio.before($imgOK.clone());
+        responseMessage(radio).show("slow")
+        } else {
+        removeAllIcons(radio);
+        radio.before($imgKO.clone());
+        responseMessage(radio).hide("fast")
+        }
+        },
+        checkAllResponseOk = function() {
+        var allResponseOk = true,
+        $checkedRadios = $("input[type='radio'].quiz-radio:checked"),
+        nbQuestions = $(".questionnaire li").length;
+        // Check all responses
+        $.each($checkedRadios, function(i, elt) {
+        allResponseOk = allResponseOk && $(elt).hasClass("ok")
+        })
+        // Check CGU accepted
+        allResponseOk = allResponseOk && $("input[type='checkbox'][name='quizReglementAccepted']:checked").length
+        if ($checkedRadios.length == nbQuestions && allResponseOk)
+        $(".quiz-send").removeAttr("disabled")
+        else
+        $(".quiz-send").attr("disabled", "disabled")
+        };
+        // Radio buttons
+        $(".quiz-radio").change(function(e) {
+        var that = this;
+        displayResponse($(that));
+        checkAllResponseOk();
+        })
+        // Checkbox cgu
+        $("input[type='checkbox'][name='quizReglementAccepted']").change(function(e) {
+        checkAllResponseOk();
+        })
+        // Send button
+        $(".quiz-send").bind("click touchstart", function(e) {
+        var formData = _.filter($('#quizForm').serializeArray(), function(elt) {
+        return elt.name != "csrfToken"
+        }),
+        $buttonsContainer = $(".quiz-buttons"),
+        displayError = function(errorTxt) {
+        $(".quiz").remove();
+        $(".quiz-KO .warning span").html(errorTxt)
+        $(".quiz-KO").show()
+        },
+        displaySuccess = function() {
+        $(".quiz").remove();
+        $(".quiz-OK .bigcheck-content").html(i18n("questionnaire.envoi.OK"));
+        $(".quiz-OK").show();
+        };
+        e.preventDefault();
+        $buttonsContainer.hide();
+        $(".quiz").append("<img src='/public/images/general/ajaxloader_small.gif' class='quiz-loading floatRight'/>");
+        $.ajax({
+        type: 'POST',
+        url: path + '/questionnaire',
+        data: formData,
+        success: function(data, textStatus, jqXHR) {
+        (data && data.length && data.length != 0) ? displayError(i18n(data)): displaySuccess();
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+        displayError(i18n(jqXHR.responseText));
+        }
+        });
+        })
+        }
+        })

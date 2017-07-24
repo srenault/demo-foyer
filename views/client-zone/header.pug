@@ -1,0 +1,235 @@
+#wrapper-header.Recette(style='z-index:-2')
+  .container
+    .row
+      #headerpage
+        .span3.headerLogo(style='text-align:left')
+          a#logo(href='http://mybrecette.foyer.lu/accueil')
+          .bold.italic.alignCenter.white Recette
+        .span9.headerOther
+          .userData.introAccueil(intro-order-step='2', intro-clef-message='intro.accueil.step.2')
+            h1 Monsieur ANTOINE NAVARRO
+            div
+              label Identifiant : 
+              |  1000015
+            div
+              label Dernière connexion : 
+              |  13/07/2017 16:37
+            .marginTop10
+              i.icon-signout.icon-large.marginRight5.red
+              a#logout(href='http://mybrecette.foyer.lu/logout', logoutlogurl='/log/deconnexion', ssologouturl='https://myrecette.foyer.lu/pxpadmin/bin/disconnect.cgi', title='Se déconnecter', message='Etes-vous sûr de vouloir vous déconnecter de votre Espace Client ?') Se déconnecter
+          div(style='float:left;')
+            form(action='http://mybrecette.foyer.lu/changeUser', method='POST', accept-charset='utf-8', enctype='multipart/form-data', data-type='Form', data-uid='1')
+              input(type='hidden', name='csrfToken', value='')
+              input(type='hidden', name='changeUser', value='true')
+              input(type='text', name='noPersonne', size='10', placeholder='Change user..')
+              input.button.action(type='submit', value='ok')
+          .langage
+            a#fr_btn.bold(href='http://mybrecette.foyer.lu/langage/fr') FR
+            |  |
+            a#de_btn(href='http://mybrecette.foyer.lu/langage/de') DE
+          .headerContact
+            a(href='http://www.foyer.lu/') Foyer.lu
+            |  |
+            a(href='http://mybrecette.foyer.lu/messages/ecrire/depuis/CONTACT')
+              | Contact
+          .white.marginTop10.marginLeft10.floatLeft
+            label
+              input#skipSas(type='checkbox')
+              | Ignore Sas
+          .welcome.introAccueil(intro-order-step='1', intro-clef-message='intro.accueil.step.1')
+            | Bienvenue dans votre Espace Client Foyer qui vous permet d'accéder à nos services en ligne.
+          #mainSecureMenu.menu
+            ul
+              li.icon.home.introAccueil(intro-order-step='8', intro-clef-message='intro.accueil.step.8')
+                a(href='http://mybrecette.foyer.lu/accueil', title='Accueil')
+              // TODO tester si actif afficher sinon hide interceptors.AppContext.currentUser.connexion.sdActivationSeezam.isDefined --DONE
+              li.icon.mail.introAccueil(intro-order-step='6', intro-clef-message='intro.accueil.step.6')
+                a(href='http://mybrecette.foyer.lu/messages/recus')
+                  i.icon-envelope(title='Ma messagerie')
+                  span.vignet(title='', style='display: block') 10
+              li.notIcon
+                a(href='http://mybrecette.foyer.lu/accueil#') Mon profil
+                ul.seezamNo
+                  li
+                    ul.menuInlineGroup
+                      li
+                        a.noPadding(href='http://mybrecette.foyer.lu/donnees/coordonnees/personnelles')
+                          span.subtitle Mes données personnelles
+                      li
+                        a(href='http://mybrecette.foyer.lu/donnees/coordonnees/personnelles') Modifier mes coordonnées personnelles
+                      li
+                        a(href='http://mybrecette.foyer.lu/donnees/menage') Mettre à jour ma situation familiale
+                      li
+                        a(href='http://mybrecette.foyer.lu/donnees/coordonnees/bancaires') Modifier mes coordonnées bancaires
+                      li
+                        a(href='http://mybrecette.foyer.lu/donnees/acces/mot-de-passe/modifier') Modifier mes codes d'accès
+                    ul.menuInlineGroup
+                      li
+                        span.subtitle Mes e-services
+                      li
+                        a(href='http://mybrecette.foyer.lu/messages/recus') Ma messagerie
+                      // TODO tester si actif afficher --DONE
+                      //
+                        <li><a href="JavaScript:window.safelyOpen('https://ssoluxtrustt.lefoyer.lu/foyerldap/manage', '', 'resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')" >Gérer mon (mes) certificat(s) Luxtrust</a></li>
+              li.notIcon
+                a(href='http://mybrecette.foyer.lu/accueil#') Mes contrats
+                ul.seezamNo
+                  li
+                    ul.menuInlineGroup
+                      li
+                        span.subtitle Mes contrats
+                      li
+                        .picture.AUT.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-04-03-22.15.32.820203') mobilé 20368898 - AUDI - EH1542 
+                      li
+                        .picture.AUT.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.182646') mobilé 20369124 - MAZDA - 123456 
+                      li
+                        .picture.MRH.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-05-10-20.53.06.074020') reebou family 20368899 - 1930 - LUXEMBOURG  
+                      li
+                        .picture.SAN.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-03-16-21.35.03.012679')
+                            | medicis 61020767 - 1 assuré(s) 
+                            .color2(data-type='IconInfoTitle', data-uid='2')
+                              i.icon-info-sign.medium
+                              .overlay.information(style='display: none')
+                                | ANTOINE NAVARRO
+                                br
+                      li
+                        .picture.SAN.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-05-17-21.06.11.183129')
+                            | medicis 61020826 - 1 assuré(s) 
+                            .color2(data-type='IconInfoTitle', data-uid='3')
+                              i.icon-info-sign.medium
+                              .overlay.information(style='display: none')
+                                | ANTOINE NAVARRO
+                                br
+                      li
+                        .picture.PEP.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.453969')
+                            | focus 5112000035 - 1 assuré(s) 
+                            .color2(data-type='IconInfoTitle', data-uid='4')
+                              i.icon-info-sign.medium
+                              .overlay.information(style='display: none')
+                                | ANTOINE NAVARRO
+                                br
+                      li
+                        .picture.PNS.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.454870')
+                            | horizont60 8060000977 - 1 assuré(s) 
+                            .color2(data-type='IconInfoTitle', data-uid='5')
+                              i.icon-info-sign.medium
+                              .overlay.information(style='display: none')
+                                | ANTOINE NAVARRO
+                                br
+                      li
+                        .picture.INV.opened.small.marginLeft5
+                        .inline-block
+                          a.inline-block.paddingRight0(href='http://mybrecette.foyer.lu/contrat/2017-07-20-04.58.08.456254')
+                            | flexivie 8137000978 - 1 assuré(s) 
+                            .color2(data-type='IconInfoTitle', data-uid='6')
+                              i.icon-info-sign.medium
+                              .overlay.information(style='display: none')
+                                | ANTOINE NAVARRO
+                                br
+                    ul.menuInlineGroup
+                      li
+                        span.subtitle Mes documents
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/documentsRecus') Mon historique de documents reçus
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/obtenir/attestation-certificat') Demander une attestation/un certificat
+              li.notIcon
+                a(href='http://mybrecette.foyer.lu/accueil#') Mes démarches
+                ul.seezamNo
+                  li
+                    ul.menuInlineGroup
+                      li
+                        span.subtitle Mes sinistres & prestations
+                      li
+                        a(href='http://mybrecette.foyer.lu/demarches/sinistre/declarer') Déclarer un sinistre
+                      li
+                        a(href='http://mybrecette.foyer.lu/demarches/sinistre/suivi') Suivre mes sinistres
+                      li
+                        a(href='http://mybrecette.foyer.lu/demarches/prestation/remboursement') Demander un remboursement santé
+                      li
+                        a(href='http://mybrecette.foyer.lu/demarches/prestation/prise-en-charge') Demander une prise en charge
+                      li
+                        a(href='http://mybrecette.foyer.lu/demarches/prestation/suivi') Suivre mes dossiers santé
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/assisto') Assisto: L'Application e-constat
+                    ul.menuInlineGroup
+                      li
+                        span.subtitle Mes paiements
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/situationCompte') Consulter ma situation de compte
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/factures') Régler mes factures
+                      li
+                        a(href='http://mybrecette.foyer.lu/services/domicilier') Mettre en place un paiement mensuel
+              li.notIcon
+                a(href='http://mybrecette.foyer.lu/accueil#') Solutions Foyer
+                ul.seezamNo
+                  li
+                    ul.menuInlineGroup
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/se-deplacer-en-voiture') Rester mobile
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/se-loger-et-vivre-sereinement') Se loger et vivre sereinement
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/proteger-sa-sante') Protéger sa santé
+                    ul.menuInlineGroup
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/epargner-et-proteger-les-siens') Epargner et protéger ses proches
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/preparer-sa-retraite') Préparer sa retraite
+                      li
+                        a(href='http://mybrecette.foyer.lu/solutions/investir') Investir
+      script(type='text/javascript').
+        function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (var i = 0; i < 24; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        console.log("idmongo")
+        console.log(text)
+        return text;
+        }
+        var personneUrl = "/mfb/getPersonneMFB/1000015"
+        $(document).ready(function() {
+        console.log("test")
+        $.get(personneUrl, function() {
+        console.log("success");
+        })
+        .done(function(response) {
+        console.log(response)
+        var mongoId = makeid()
+        /** MFB **/
+        // Review the commented lines. Insert real values for the placeholders
+        var _Mfb_ud = {
+        r_age: response.data.age, //Transmettre une tranche d'âge avec des intervalles de 5 ans.
+        r_titre: response.data.titre, //Titre d'une personne
+        r_nationalite: response.data.nationalite, //Nationalité (liste pays)
+        r_langue: response.data.langue, //Langue de correspondance
+        r_id_evt: mongoId //Identifiant événement des ASE pour Questionnaire MyFeelback côté FOYER
+        };
+        (function() {
+        var mfb = document.createElement('script');
+        mfb.type = 'text/javascript';
+        mfb.charset = 'UTF-8';
+        mfb.async = true;
+        mfb.id = 'MFBActor';
+        mfb.src = 'https://actorssl-5637.kxcdn.com/actor/ae8aa4e5d5205d1995c3e4194ccb2a15-800/action';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mfb, s);
+        })();
+        });
+        });
