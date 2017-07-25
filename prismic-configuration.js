@@ -15,6 +15,7 @@ module.exports = {
   linkResolver: function(doc, ctx) {
     if (doc.type == 'page') return `/${doc.lang}/page/${doc.uid}`;
     else if (doc.type == 'homepage') return `/${doc.lang}`;
+    else if (doc.type == 'banner') return `/${doc.lang}/client-zone`;
     return '/';
   }
 };
