@@ -3,6 +3,7 @@
 "use strict";
 
 const Prismic = require('prismic-javascript');
+//const Prismic = require('prismic.io');
 const { RichText, Link } = require('prismic-dom');
 const app = require('./config');
 const config = require('./prismic-configuration');
@@ -42,6 +43,8 @@ app.use((req, res, next) => {
   })
   .then((api) => {
     req.prismic = { api };
+    res.locals.ctx.googleId = api.data.experiments.running[0].googleId;
+    
     //continue spreading request
     next();
   })
@@ -57,17 +60,17 @@ app.use(I18NUrl(), (req, res, next) => {
   next();
 });
 
-//Middleware that query menu in prismic for each GET request
-app.use(I18NUrl(), (req, res, next) => {
-  req.prismic.api.getSingle("menu", I18NConfig(req))
-  .then((menu) => {
-    res.locals.menu = menu;
-    next();
-  })
-  .catch((err) => {
-    next(`Error getting menu from prismic: ${error.message}`);
-  });
-});
+////Middleware that query menu in prismic for each GET request
+//app.use(I18NUrl(), (req, res, next) => {
+//  req.prismic.api.getSingle("menu", I18NConfig(req))
+//  .then((menu) => {
+//    res.locals.menu = menu;
+//    next();
+//  })
+//  .catch((err) => {
+//    next(`Error getting menu from prismic: ${error.message}`);
+//  });
+//});
 
 //redirect / to default language from i18n.json
 app.get('/', (req, res, next) => {

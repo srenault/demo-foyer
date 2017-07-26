@@ -3,7 +3,7 @@ module.exports = {
   apiEndpoint: 'https://foyer-demo.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
-  // accessToken: 'xxxxxx',
+  accessToken: 'MC5XWGhodlNnQUFDY0ExOXhJ.UVnvv70Pae-_ve-_ve-_ve-_ve-_vXzvv73vv73vv70EY--_vXzvv73vv73vv73vv71pVx5rOQrvv73vv73vv704',
 
   // OAuth
   // clientId: 'xxxxxx',
