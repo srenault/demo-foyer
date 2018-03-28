@@ -94,10 +94,9 @@ app.get(I18NUrl('/'), (req, res, next) => {
 // Route for pages
 app.get(I18NUrl('/page/:uid'), (req, res, next) => {
   const uid = req.params.uid;
-  
   req.prismic.api.getByUID("page", uid, I18NConfig(req))
   .then((page) => {
-    if(!page) res.status(404).send('page not found');
+    if(!page) res.status(404).render('404');
     else res.render('landing-page', { page });
   })
   .catch((error) => {
@@ -110,7 +109,7 @@ app.get(I18NUrl('/client-zone'), (req, res, next) => {
   
   req.prismic.api.getSingle("banner", I18NConfig(req))
   .then((banner) => {
-    if(!banner) res.status(404).send('banner not found');
+    if(!banner) res.status(404).render('404');
     else res.render('client-zone', { banner });
   })
   .catch((error) => {
